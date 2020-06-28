@@ -9,6 +9,5 @@ public class Horadosistema {
        Date relogio = new Date();//relogio é um objeto devido ao new
         System.out.println("A hora do sistema é");
         System.out.println(relogio.toString());
-    }
-    
+    }    
 }
