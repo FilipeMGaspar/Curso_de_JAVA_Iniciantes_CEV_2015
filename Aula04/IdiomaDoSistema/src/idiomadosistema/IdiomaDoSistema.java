@@ -9,6 +9,7 @@ public class IdiomaDoSistema {
         // Verificar qual é o idioma do sistema
         Locale idioma = Locale.getDefault(); // Para obter o idioma do sistema
         System.out.print("O idioma do sistema está configurado em: ");
+        System.out.println(idioma.getDisplayLanguage());//getDisplayLanguage() método para mostrar o idioma do sistema
     }
     
 }
