@@ -38,6 +38,11 @@ public class OlaMundoJava extends javax.swing.JFrame {
 
         btnClick.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnClick.setText("Clique em Mim");
+        btnClick.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClickActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -65,6 +70,11 @@ public class OlaMundoJava extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnClickActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClickActionPerformed
+        // TODO add your handling code here:
+        lblMensagem.setText(string);
+    }//GEN-LAST:event_btnClickActionPerformed
 
     /**
      * @param args the command line arguments
