@@ -19,7 +19,8 @@ import javafx.scene.control.Label;
 public class FXMLDocumentController implements Initializable {
     
     @FXML
-    private Label label;
+    private Label lblMensagem;
+    private 
     
     @FXML
     private void handleButtonAction(ActionEvent event) {
