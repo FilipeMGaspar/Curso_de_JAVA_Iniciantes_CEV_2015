@@ -27,17 +27,17 @@ public class OlaMundoJava extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        lblMensagem = new javax.swing.JLabel();
+        btnClick = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(204, 51, 0));
-        jLabel1.setText("Aqui vai aparecer a mensagem");
+        lblMensagem.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        lblMensagem.setForeground(new java.awt.Color(204, 51, 0));
+        lblMensagem.setText("Aqui vai aparecer a mensagem");
 
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton1.setText("Clique em Mim");
+        btnClick.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnClick.setText("Clique em Mim");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -47,19 +47,19 @@ public class OlaMundoJava extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(138, 138, 138)
-                        .addComponent(jButton1))
+                        .addComponent(btnClick))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(41, 41, 41)
-                        .addComponent(jLabel1)))
+                        .addComponent(lblMensagem)))
                 .addContainerGap(73, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(80, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(lblMensagem)
                 .addGap(76, 76, 76)
-                .addComponent(jButton1)
+                .addComponent(btnClick)
                 .addGap(99, 99, 99))
         );
 
@@ -102,7 +102,7 @@ public class OlaMundoJava extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton btnClick;
+    private javax.swing.JLabel lblMensagem;
     // End of variables declaration//GEN-END:variables
 }
