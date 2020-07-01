@@ -5,6 +5,8 @@
  */
 package cursoemvideo;
 
+import java.util.Date;
+
 /**
  *
  * @author user
@@ -89,6 +91,7 @@ public class TelaRelogio extends javax.swing.JFrame {
     private void btnHoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHoraActionPerformed
                 // TODO add your handling code here:
                 Date relogio = new Date();
+                
     }//GEN-LAST:event_btnHoraActionPerformed
 
     /**
