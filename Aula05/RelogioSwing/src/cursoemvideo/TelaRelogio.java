@@ -29,7 +29,7 @@ public class TelaRelogio extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        lblHora = new javax.swing.JLabel();
         btnHora = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -39,9 +39,9 @@ public class TelaRelogio extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setText("Data e Hora Atual");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(153, 153, 153));
-        jLabel3.setText("Clicque no botão");
+        lblHora.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblHora.setForeground(new java.awt.Color(153, 153, 153));
+        lblHora.setText("Clicque no botão");
 
         btnHora.setText("Clique");
 
@@ -55,7 +55,7 @@ public class TelaRelogio extends javax.swing.JFrame {
                 .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel3)
+                    .addComponent(lblHora)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(13, 13, 13)
                         .addComponent(btnHora)))
@@ -72,7 +72,7 @@ public class TelaRelogio extends javax.swing.JFrame {
                         .addGap(67, 67, 67)
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel3)
+                        .addComponent(lblHora)
                         .addGap(18, 18, 18)
                         .addComponent(btnHora)))
                 .addContainerGap(142, Short.MAX_VALUE))
@@ -120,6 +120,6 @@ public class TelaRelogio extends javax.swing.JFrame {
     private javax.swing.JButton btnHora;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel lblHora;
     // End of variables declaration//GEN-END:variables
 }
