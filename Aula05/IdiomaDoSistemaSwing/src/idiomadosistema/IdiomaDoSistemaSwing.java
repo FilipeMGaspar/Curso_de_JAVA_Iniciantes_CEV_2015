@@ -34,7 +34,7 @@ public class IdiomaDoSistemaSwing extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/idiomas.jpg"))); // NOI18N
 
-        jLabel2.setText("jLabel2");
+        jLabel2.setText("Idioma do Sistema");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -43,9 +43,9 @@ public class IdiomaDoSistemaSwing extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1)
-                .addGap(61, 61, 61)
+                .addGap(38, 38, 38)
                 .addComponent(jLabel2)
-                .addContainerGap(95, Short.MAX_VALUE))
+                .addContainerGap(65, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -55,7 +55,7 @@ public class IdiomaDoSistemaSwing extends javax.swing.JFrame {
                         .addGap(29, 29, 29)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
+                        .addGap(48, 48, 48)
                         .addComponent(jLabel2)))
                 .addContainerGap(121, Short.MAX_VALUE))
         );
