@@ -30,6 +30,7 @@ public class TelaRelogio extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        btnHora = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -38,7 +39,11 @@ public class TelaRelogio extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setText("Data e Hora Atual");
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(153, 153, 153));
         jLabel3.setText("Clicque no botão");
+
+        btnHora.setText("Clique");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -50,8 +55,11 @@ public class TelaRelogio extends javax.swing.JFrame {
                 .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addContainerGap(142, Short.MAX_VALUE))
+                    .addComponent(jLabel3)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(13, 13, 13)
+                        .addComponent(btnHora)))
+                .addContainerGap(136, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -64,8 +72,10 @@ public class TelaRelogio extends javax.swing.JFrame {
                         .addGap(67, 67, 67)
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel3)))
-                .addContainerGap(153, Short.MAX_VALUE))
+                        .addComponent(jLabel3)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnHora)))
+                .addContainerGap(142, Short.MAX_VALUE))
         );
 
         pack();
@@ -107,6 +117,7 @@ public class TelaRelogio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnHora;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
