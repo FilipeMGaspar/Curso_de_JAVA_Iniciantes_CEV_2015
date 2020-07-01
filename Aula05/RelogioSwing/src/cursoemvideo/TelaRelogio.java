@@ -44,6 +44,11 @@ public class TelaRelogio extends javax.swing.JFrame {
         lblHora.setText("Clicque no botão");
 
         btnHora.setText("Clique");
+        btnHora.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHoraActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -59,7 +64,7 @@ public class TelaRelogio extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(13, 13, 13)
                         .addComponent(btnHora)))
-                .addContainerGap(136, Short.MAX_VALUE))
+                .addContainerGap(273, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -75,11 +80,16 @@ public class TelaRelogio extends javax.swing.JFrame {
                         .addComponent(lblHora)
                         .addGap(18, 18, 18)
                         .addComponent(btnHora)))
-                .addContainerGap(142, Short.MAX_VALUE))
+                .addContainerGap(50, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnHoraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHoraActionPerformed
+                // TODO add your handling code here:
+                Date relogio = new Date();
+    }//GEN-LAST:event_btnHoraActionPerformed
 
     /**
      * @param args the command line arguments
