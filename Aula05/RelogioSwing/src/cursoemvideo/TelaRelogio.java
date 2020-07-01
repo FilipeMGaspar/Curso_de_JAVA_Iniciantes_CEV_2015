@@ -41,10 +41,11 @@ public class TelaRelogio extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel2.setText("Data e Hora Atual");
 
-        lblHora.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblHora.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         lblHora.setForeground(new java.awt.Color(153, 153, 153));
         lblHora.setText("Clicque no botão");
 
+        btnHora.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         btnHora.setText("Clique");
         btnHora.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,7 +67,7 @@ public class TelaRelogio extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(13, 13, 13)
                         .addComponent(btnHora)))
-                .addContainerGap(273, Short.MAX_VALUE))
+                .addContainerGap(257, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -82,7 +83,7 @@ public class TelaRelogio extends javax.swing.JFrame {
                         .addComponent(lblHora)
                         .addGap(18, 18, 18)
                         .addComponent(btnHora)))
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         pack();
