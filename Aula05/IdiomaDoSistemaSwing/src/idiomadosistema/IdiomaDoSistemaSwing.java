@@ -38,6 +38,7 @@ public class IdiomaDoSistemaSwing extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/idiomas.jpg"))); // NOI18N
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Idioma do Sistema");
 
         jButton1.setText("Verificar Idioma");
@@ -47,7 +48,8 @@ public class IdiomaDoSistemaSwing extends javax.swing.JFrame {
             }
         });
 
-        lblMensagem.setText("jLabel3");
+        lblMensagem.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblMensagem.setForeground(new java.awt.Color(0, 51, 153));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -65,7 +67,7 @@ public class IdiomaDoSistemaSwing extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(67, 67, 67)
                         .addComponent(jButton1)))
-                .addContainerGap(65, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -90,9 +92,7 @@ public class IdiomaDoSistemaSwing extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         Locale idioma = Locale.getDefault(); // Para obter o idioma do sistema
-        //System.out.print("O idioma do sistema está configurado em: ");
-        //System.out.println(idioma.getDisplayLanguage());//getDisplayLanguage() método para mostrar o idioma do sistema
-        lblMensagem.setText(idioma.getDisplayLanguage());
+        lblMensagem.setText(idioma.getDisplayLanguage());//getDisplayLanguage() método para mostrar o idioma do sistema
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
