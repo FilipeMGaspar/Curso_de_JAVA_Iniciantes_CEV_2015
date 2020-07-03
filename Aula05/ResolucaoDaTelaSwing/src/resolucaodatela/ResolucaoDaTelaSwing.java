@@ -30,7 +30,7 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        lblMensagem = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -41,8 +41,9 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
 
         jButton1.setText("Resolução da Tela");
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel3.setText("jLabel3");
+        lblMensagem.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        lblMensagem.setForeground(new java.awt.Color(0, 12, 108));
+        lblMensagem.setText("jLabel3");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -59,7 +60,7 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(116, 116, 116)
-                        .addComponent(jLabel3)))
+                        .addComponent(lblMensagem)))
                 .addContainerGap(90, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -73,7 +74,7 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
                         .addGap(86, 86, 86)
                         .addComponent(jLabel2)
                         .addGap(20, 20, 20)
-                        .addComponent(jLabel3)))
+                        .addComponent(lblMensagem)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1)
                 .addContainerGap(77, Short.MAX_VALUE))
@@ -121,6 +122,6 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel lblMensagem;
     // End of variables declaration//GEN-END:variables
 }
