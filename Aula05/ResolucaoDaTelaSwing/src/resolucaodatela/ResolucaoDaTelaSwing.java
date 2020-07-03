@@ -95,6 +95,8 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
         // TODO add your handling code here:
          Toolkit tk = Toolkit.getDefaultToolkit();//Caixa de ferramentas para obtre a resolução do ecrã
          Dimension d = tk.getScreenSize();//Obtem as dimensões do ecrã
+         //System.out.println("A resolução do seu Monitor é: " +d.width + " x " +d.height);
+         lblMensagem.setText(d.width + " x " +d.height);
     }//GEN-LAST:event_btnCliqueActionPerformed
 
     /**
