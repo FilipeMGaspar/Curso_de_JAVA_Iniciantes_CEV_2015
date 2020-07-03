@@ -39,7 +39,7 @@ public class IdiomaDoSistemaSwing extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagem/idiomas.jpg"))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Idioma do Sistema");
+        jLabel2.setText("Idioma do Sistema:");
 
         jButton1.setText("Verificar Idioma");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -70,7 +70,7 @@ public class IdiomaDoSistemaSwing extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(67, 67, 67)
                         .addComponent(jButton1)))
-                .addContainerGap(68, Short.MAX_VALUE))
+                .addContainerGap(63, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
