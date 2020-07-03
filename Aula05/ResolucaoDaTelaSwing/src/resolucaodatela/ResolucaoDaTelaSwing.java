@@ -5,6 +5,7 @@
  */
 package resolucaodatela;
 
+import java.awt.Dimension;
 import java.awt.Toolkit;
 
 /**
@@ -93,6 +94,7 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
     private void btnCliqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCliqueActionPerformed
         // TODO add your handling code here:
          Toolkit tk = Toolkit.getDefaultToolkit();//Caixa de ferramentas para obtre a resolução do ecrã
+         Dimension d = tk.getScreenSize();//Obtem as dimensões do ecrã
     }//GEN-LAST:event_btnCliqueActionPerformed
 
     /**
