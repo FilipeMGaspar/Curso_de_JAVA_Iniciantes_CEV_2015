@@ -29,7 +29,7 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnClique = new javax.swing.JButton();
         lblMensagem = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -39,7 +39,7 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel2.setText("Resolução da Tela:");
 
-        jButton1.setText("Resolução da Tela");
+        btnClique.setText("Resolução da Tela");
 
         lblMensagem.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         lblMensagem.setForeground(new java.awt.Color(0, 12, 108));
@@ -52,7 +52,7 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1)
+                    .addComponent(btnClique)
                     .addComponent(jLabel1))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -76,7 +76,7 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
                         .addGap(20, 20, 20)
                         .addComponent(lblMensagem)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
+                .addComponent(btnClique)
                 .addContainerGap(77, Short.MAX_VALUE))
         );
 
@@ -119,7 +119,7 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnClique;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblMensagem;
