@@ -5,6 +5,8 @@
  */
 package idiomadosistema;
 
+import java.util.Locale;
+
 /**
  *
  * @author user
@@ -87,7 +89,10 @@ public class IdiomaDoSistemaSwing extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
+        Locale idioma = Locale.getDefault(); // Para obter o idioma do sistema
+        //System.out.print("O idioma do sistema está configurado em: ");
+        //System.out.println(idioma.getDisplayLanguage());//getDisplayLanguage() método para mostrar o idioma do sistema
+        lblMensagem.setText(idioma.getDisplayLanguage());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
