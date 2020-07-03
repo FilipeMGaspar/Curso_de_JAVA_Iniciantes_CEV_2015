@@ -51,7 +51,6 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
 
         lblMensagem.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         lblMensagem.setForeground(new java.awt.Color(111, 18, 6));
-        lblMensagem.setText("jLabel3");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -69,7 +68,7 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(116, 116, 116)
                         .addComponent(lblMensagem)))
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addContainerGap(115, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
