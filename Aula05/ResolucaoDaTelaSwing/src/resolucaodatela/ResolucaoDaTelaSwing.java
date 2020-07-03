@@ -5,6 +5,8 @@
  */
 package resolucaodatela;
 
+import java.awt.Toolkit;
+
 /**
  *
  * @author user
@@ -40,6 +42,11 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
         jLabel2.setText("Resolução da Tela:");
 
         btnClique.setText("Resolução da Tela");
+        btnClique.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCliqueActionPerformed(evt);
+            }
+        });
 
         lblMensagem.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         lblMensagem.setForeground(new java.awt.Color(0, 12, 108));
@@ -82,6 +89,11 @@ public class ResolucaoDaTelaSwing extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCliqueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCliqueActionPerformed
+        // TODO add your handling code here:
+         Toolkit tk = Toolkit.getDefaultToolkit();//Caixa de ferramentas para obtre a resolução do ecrã
+    }//GEN-LAST:event_btnCliqueActionPerformed
 
     /**
      * @param args the command line arguments
