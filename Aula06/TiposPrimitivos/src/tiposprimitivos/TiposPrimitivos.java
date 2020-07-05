@@ -21,8 +21,8 @@ public class TiposPrimitivos {
         Scanner teclado = new Scanner(System.in);
         System.out.print("Indique o nome do aluno: ");
         String nome = teclado.nextLine();
-        System.out.println("");
-        float nota = teclado.nextFloat();
+        System.out.print("Indique a nota obtida: ");
+        Float nota = teclado.nextFloat();
         //System.out.print("A nota é: " + nota);
         System.out.println("A nota é: " + nota);
         
