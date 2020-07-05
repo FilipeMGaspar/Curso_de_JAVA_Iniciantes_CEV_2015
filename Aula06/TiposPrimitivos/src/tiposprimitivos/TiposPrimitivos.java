@@ -22,7 +22,7 @@ public class TiposPrimitivos {
         System.out.print("Indique o nome do aluno: ");
         String nome = teclado.nextLine();
         System.out.print("Indique a nota obtida: ");
-        Float nota = teclado.nextFloat();
+        float nota = teclado.nextFloat();
         //System.out.print("A nota é: " + nota);
         System.out.println("A nota é: " + nota);
         
