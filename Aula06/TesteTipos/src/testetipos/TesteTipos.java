@@ -16,8 +16,9 @@ public class TesteTipos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int idade = 30;
-        String valor = Integer.toHexString(idade);
+        int idade = 20;
+        String valor = Integer.toString(idade);
+        System.out.println("Idade "+ valor +" anos");
     }
     
 }
