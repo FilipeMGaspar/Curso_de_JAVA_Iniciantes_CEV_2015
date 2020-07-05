@@ -19,6 +19,9 @@ public class TesteTipos {
         int idade = 20;
         String valor = Integer.toString(idade);
         System.out.println("Idade "+ valor +" anos");
+        
+        String anos = "30";
+        int aSuaIdade = anos;
     }
     
 }
