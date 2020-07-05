@@ -25,7 +25,8 @@ public class TesteTipos {
         
         System.out.println("A sua idade "+ aSuaIdade);
         
-        
+        String peso = "68.7";
+        float pesado = peso;
     }
     
 }
