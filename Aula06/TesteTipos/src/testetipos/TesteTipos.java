@@ -22,6 +22,10 @@ public class TesteTipos {
         
         String anos = "30";
         int aSuaIdade = Integer.parseInt(anos);
+        
+        System.out.println("A sua idade "+ aSuaIdade);
+        
+        
     }
     
 }
