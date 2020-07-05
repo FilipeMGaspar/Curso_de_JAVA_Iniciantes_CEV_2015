@@ -85,7 +85,8 @@ public class TelaSoma extends javax.swing.JFrame {
     private void btnSomaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSomaActionPerformed
         // TODO add your handling code here:
         int n1= Integer.parseInt(txtN1.getText());
-        int n2 = ; 
+        int n2 = Integer.parseInt(txtN2.getText());
+        
     }//GEN-LAST:event_btnSomaActionPerformed
 
     /**
