@@ -86,6 +86,8 @@ public class TelaSoma extends javax.swing.JFrame {
         // TODO add your handling code here:
         int n1= Integer.parseInt(txtN1.getText());
         int n2 = Integer.parseInt(txtN2.getText());
+        int s = n1+n2;
+        lblSoma.setText(Integer.toString(s));
         
     }//GEN-LAST:event_btnSomaActionPerformed
 
