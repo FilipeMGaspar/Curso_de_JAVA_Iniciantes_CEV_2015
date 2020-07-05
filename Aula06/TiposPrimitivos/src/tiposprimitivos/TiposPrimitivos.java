@@ -18,6 +18,7 @@ public class TiposPrimitivos {
         // TODO code application logic here
         float nota = 8.5f;
         System.out.println("A nota é: " + nota);
+        System.out.printf("A nota é %.2f\n", nota);                
     }
     
 }
