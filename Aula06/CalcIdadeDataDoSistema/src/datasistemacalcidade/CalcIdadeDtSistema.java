@@ -5,6 +5,8 @@
  */
 package datasistemacalcidade;
 
+import java.util.Calendar;
+
 /**
  *
  * @author user
@@ -70,6 +72,7 @@ public class CalcIdadeDtSistema extends javax.swing.JFrame {
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
         // TODO add your handling code here:
+        Calendar calendario = Calendar.getInstance();
         
     }//GEN-LAST:event_formWindowActivated
 
