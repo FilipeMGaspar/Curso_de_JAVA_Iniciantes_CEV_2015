@@ -74,7 +74,7 @@ public class CalcIdadeDtSistema extends javax.swing.JFrame {
         // TODO add your handling code here:
         Calendar calendario = Calendar.getInstance();
         int anoAtual = calendario.get(Calendar.YEAR);
-        lblDataAtual.setText(anoAtual);
+        lblDataAtual.setText(Integer.toString(anoAtual));
     }//GEN-LAST:event_formWindowActivated
 
     /**
