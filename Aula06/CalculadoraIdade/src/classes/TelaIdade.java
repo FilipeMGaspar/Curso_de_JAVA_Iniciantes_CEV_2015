@@ -112,7 +112,7 @@ public class TelaIdade extends javax.swing.JFrame {
 
     private void btnCalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcActionPerformed
         // TODO add your handling code here:
-        int an = txtAn.getValue();
+        int an = txtAn.getValue().toString();
     }//GEN-LAST:event_btnCalcActionPerformed
 
     /**
