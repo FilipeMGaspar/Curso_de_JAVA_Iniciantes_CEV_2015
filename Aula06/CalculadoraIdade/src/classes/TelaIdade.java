@@ -40,8 +40,15 @@ public class TelaIdade extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel1.setText("Ano de Nascimento");
 
+        txtAn.setModel(new javax.swing.SpinnerNumberModel(1500, 1500, 2020, 1));
+
         btnCalc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/calculadora.png"))); // NOI18N
         btnCalc.setText("Calcular");
+        btnCalc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jLabel2.setText("Idade:");
@@ -102,6 +109,11 @@ public class TelaIdade extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcActionPerformed
+        // TODO add your handling code here:
+        int an = txtAn.getValue();
+    }//GEN-LAST:event_btnCalcActionPerformed
 
     /**
      * @param args the command line arguments
