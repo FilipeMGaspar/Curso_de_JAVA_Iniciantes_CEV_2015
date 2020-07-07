@@ -33,6 +33,7 @@ public class TelaIdade extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         lblIdade = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,6 +51,9 @@ public class TelaIdade extends javax.swing.JFrame {
         lblIdade.setText("0");
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/utilizador.png"))); // NOI18N
+
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setText("anos");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -70,7 +74,9 @@ public class TelaIdade extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(lblIdade)
                         .addGap(11, 11, 11)))
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3))
                 .addGap(35, 35, 35))
         );
         layout.setVerticalGroup(
@@ -89,7 +95,8 @@ public class TelaIdade extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(lblIdade))
+                    .addComponent(lblIdade)
+                    .addComponent(jLabel3))
                 .addGap(35, 35, 35))
         );
 
@@ -135,6 +142,7 @@ public class TelaIdade extends javax.swing.JFrame {
     private javax.swing.JButton btnCalc;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel lblIdade;
     private javax.swing.JSpinner txtAn;
