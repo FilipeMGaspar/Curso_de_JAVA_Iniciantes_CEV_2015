@@ -114,7 +114,7 @@ public class TelaIdade extends javax.swing.JFrame {
         // TODO add your handling code here:
         int an = Integer.parseInt(txtAn.getValue().toString());
         int idade = 2020 - an;
-        lblIdade.setText(idade);
+        lblIdade.setText(Integer.toString(idade));
     }//GEN-LAST:event_btnCalcActionPerformed
 
     /**
