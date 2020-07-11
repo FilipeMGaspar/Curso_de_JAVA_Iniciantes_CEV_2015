@@ -130,7 +130,7 @@ public class TelaValores extends javax.swing.JFrame {
         float res = n%d;//resto da divisão
         
         lblDiv.setText(Float.toString(res));
-        
+        lblRest.setText(Float.toString(res));
     }//GEN-LAST:event_btnDividirActionPerformed
 
     /**
