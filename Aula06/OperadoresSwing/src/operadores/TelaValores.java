@@ -126,7 +126,8 @@ public class TelaValores extends javax.swing.JFrame {
         // TODO add your handling code here:
         int n = Integer.parseInt(txtNum.getText());
         int d = Integer.parseInt(txtDem.getText());
-        
+        float div = n/d;//divisão
+        float res = n%d;//resto da divisão
     }//GEN-LAST:event_btnDividirActionPerformed
 
     /**
