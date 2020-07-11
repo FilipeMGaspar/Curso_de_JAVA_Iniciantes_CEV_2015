@@ -35,7 +35,7 @@ public class TelaValores extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         lblDiv = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        lblRest = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,9 +55,9 @@ public class TelaValores extends javax.swing.JFrame {
         lblDiv.setForeground(new java.awt.Color(153, 51, 0));
         lblDiv.setText("0");
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(153, 51, 0));
-        jLabel6.setText("0");
+        lblRest.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblRest.setForeground(new java.awt.Color(153, 51, 0));
+        lblRest.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -69,7 +69,7 @@ public class TelaValores extends javax.swing.JFrame {
                         .addGroup(layout.createSequentialGroup()
                             .addComponent(jLabel4)
                             .addGap(18, 18, 18)
-                            .addComponent(jLabel6))
+                            .addComponent(lblRest))
                         .addGroup(layout.createSequentialGroup()
                             .addComponent(jLabel3)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -110,7 +110,7 @@ public class TelaValores extends javax.swing.JFrame {
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jLabel6))
+                    .addComponent(lblRest))
                 .addGap(21, 21, 21))
         );
 
@@ -158,8 +158,8 @@ public class TelaValores extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel lblDiv;
+    private javax.swing.JLabel lblRest;
     private javax.swing.JTextField txtDem;
     private javax.swing.JTextField txtNum;
     // End of variables declaration//GEN-END:variables
