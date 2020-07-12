@@ -147,7 +147,11 @@ public class CalcIdadeDtSistema extends javax.swing.JFrame {
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         // TODO add your handling code here:
+        Calendar calen = Calendar.getInstance();
+        int anoAt = calen.get(Calendar.YEAR);
         int anoNasc = Integer.parseInt(aNasc.getValue().toString());
+        int idade = anoAt - anoNasc;
+        
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
