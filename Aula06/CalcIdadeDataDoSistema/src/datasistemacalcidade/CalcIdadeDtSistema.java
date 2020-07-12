@@ -151,7 +151,7 @@ public class CalcIdadeDtSistema extends javax.swing.JFrame {
         int anoAt = calen.get(Calendar.YEAR);
         int anoNasc = Integer.parseInt(aNasc.getValue().toString());
         int idade = anoAt - anoNasc;
-        
+        lblIdade.setText(Integer.toString(idade));
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
