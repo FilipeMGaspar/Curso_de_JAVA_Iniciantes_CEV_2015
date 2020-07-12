@@ -34,6 +34,11 @@ public class OperadoresAritemeticos {
         float tst = 25;
         float result = (float) Math.sqrt(tst);
         System.out.println("Raiz quadrada de "+tst+" é "+result);
+        
+        
+        float v = 8.9f;
+        int ar = (int)Math.floor(v);
+        System.out.println("Aredondamento por defeito "+ar);
     }
     
 }
