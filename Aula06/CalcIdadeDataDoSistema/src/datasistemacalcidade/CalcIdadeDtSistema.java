@@ -62,6 +62,11 @@ public class CalcIdadeDtSistema extends javax.swing.JFrame {
 
         btnCalcular.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/calculadora.png"))); // NOI18N
         btnCalcular.setText("Calcular");
+        btnCalcular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCalcularActionPerformed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jLabel4.setText("A sua Idade: ");
@@ -139,6 +144,11 @@ public class CalcIdadeDtSistema extends javax.swing.JFrame {
         int anoAtual = calendario.get(Calendar.YEAR);
         lblDataAtual.setText(Integer.toString(anoAtual));
     }//GEN-LAST:event_formWindowActivated
+
+    private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
      * @param args the command line arguments
