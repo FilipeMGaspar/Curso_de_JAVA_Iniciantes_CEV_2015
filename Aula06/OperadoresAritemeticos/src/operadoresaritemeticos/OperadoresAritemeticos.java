@@ -30,6 +30,8 @@ public class OperadoresAritemeticos {
         int x = 4;
         x *= 2;
         System.out.println("X = "+x);
+        
+        
     }
     
 }
