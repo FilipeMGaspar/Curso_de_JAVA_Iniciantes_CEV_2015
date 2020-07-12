@@ -21,11 +21,11 @@ public class OperadoresAritemeticos {
         float m =(n1+n2)/2;
         System.out.println("A média é igual a "+ m);
         
-        int numero = 5;
+        int numero = 10;
         //numero++;
-        int valor = 5 + numero++;
+        int valor = 4 + numero--;
         System.out.println("Valor  " + valor);
-        System.out.println("Número com pos incremento "+ numero);
+        System.out.println("Número com pos decremento "+ numero);
     }
     
 }
