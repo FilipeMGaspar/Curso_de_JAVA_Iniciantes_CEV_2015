@@ -31,7 +31,9 @@ public class OperadoresAritemeticos {
         x *= 2;
         System.out.println("X = "+x);
         
-        
+        float tst = 25;
+        float result = (float) Math.sqrt(tst);
+        System.out.println("Raiz quadrada de "+tst+" é "+result);
     }
     
 }
