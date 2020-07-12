@@ -22,8 +22,9 @@ public class OperadoresAritemeticos {
         System.out.println("A média é igual a "+ m);
         
         int numero = 5;
-        numero++;
-        System.out.println("Número com incremento "+numero);
+        //numero++;
+        int valor = 5 + numero++;
+        System.out.println("Número com incremento " + valor);
     }
     
 }
