@@ -24,7 +24,8 @@ public class OperadoresAritemeticos {
         int numero = 5;
         //numero++;
         int valor = 5 + numero++;
-        System.out.println("Número com incremento " + valor);
+        System.out.println("Valor  " + valor);
+        System.out.println("Número com pos incremento "+ numero);
     }
     
 }
