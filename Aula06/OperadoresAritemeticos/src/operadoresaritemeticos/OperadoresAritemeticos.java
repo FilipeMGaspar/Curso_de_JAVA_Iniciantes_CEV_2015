@@ -28,7 +28,7 @@ public class OperadoresAritemeticos {
         System.out.println("Número com pos decremento "+ numero);
         
         int x = 4;
-        x += 2;
+        x *= 2;
         System.out.println("X = "+x);
     }
     
