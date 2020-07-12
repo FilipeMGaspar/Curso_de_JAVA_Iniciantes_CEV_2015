@@ -39,6 +39,10 @@ public class OperadoresAritemeticos {
         float v = 8.9f;
         int ar = (int)Math.floor(v);
         System.out.println("Aredondamento por defeito "+ar);
+        
+        double ale = Math.random();
+        int n = (int)(15 + ale * (50-15));//Número aleatóreo de 15 até 50
+        System.out.println("Valor aleatóreo "+n);
     }
     
 }
