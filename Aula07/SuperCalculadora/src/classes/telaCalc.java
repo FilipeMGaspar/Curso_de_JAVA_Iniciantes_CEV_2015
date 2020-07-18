@@ -40,6 +40,8 @@ public class telaCalc extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         lblRaizQrd = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        lblRaizCubica = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -78,6 +80,13 @@ public class telaCalc extends javax.swing.JFrame {
         lblRaizQrd.setForeground(new java.awt.Color(0, 51, 204));
         lblRaizQrd.setText("0");
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel6.setText("Raiz Cúbica:");
+
+        lblRaizCubica.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblRaizCubica.setForeground(new java.awt.Color(0, 0, 204));
+        lblRaizCubica.setText("0");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -102,7 +111,11 @@ public class telaCalc extends javax.swing.JFrame {
                                 .addGroup(layout.createSequentialGroup()
                                     .addComponent(jLabel5)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(lblRaizQrd)))
+                                    .addComponent(lblRaizQrd))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel6)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(lblRaizCubica)))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -133,7 +146,11 @@ public class telaCalc extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(lblRaizQrd))
-                .addContainerGap(69, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(lblRaizCubica))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         pack();
@@ -151,6 +168,7 @@ public class telaCalc extends javax.swing.JFrame {
         BigDecimal raizQ = new BigDecimal(raizQdr).setScale(2, RoundingMode.HALF_EVEN);        
         lblRaizQrd.setText(Double.toString(raizQ.doubleValue()));
         
+        lblRaizCubica        
     }//GEN-LAST:event_btnCalculaActionPerformed
 
     /**
@@ -195,8 +213,10 @@ public class telaCalc extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel lblAoCubo;
     private javax.swing.JLabel lblDivPor2;
+    private javax.swing.JLabel lblRaizCubica;
     private javax.swing.JLabel lblRaizQrd;
     private javax.swing.JSpinner valNum;
     // End of variables declaration//GEN-END:variables
