@@ -180,18 +180,19 @@ public class telaCalc extends javax.swing.JFrame {
         lblDivPor2.setText(Integer.toString((valor%2)));
         
         lblAoCubo.setText(Double.toString(Math.pow(valor, 3)));    
-        
+        /*
         //Calculo da Raiz Quadrada com arredondamento para 2 casas décimais
         double raizQdr = Math.sqrt(valor);
         BigDecimal raizQ = new BigDecimal(raizQdr).setScale(2, RoundingMode.HALF_EVEN);        
         lblRaizQrd.setText(Double.toString(raizQ.doubleValue()));
-        
+        */
         //Calculo da Raiz cúbica com arredondamento para 2 casas décimais
         double raizCub = Math.cbrt(valor);
         BigDecimal raizCubica = new BigDecimal(raizCub).setScale(2, RoundingMode.HALF_EVEN);
         lblRaizCubica.setText(Double.toString(raizCubica.doubleValue()));
         
         //Calculo do valor absoluto
+        lblValAbs.setText(Integer.toString(Math.abs(valor)));
     }//GEN-LAST:event_btnCalculaActionPerformed
 
     /**
