@@ -168,8 +168,11 @@ public class telaCalc extends javax.swing.JFrame {
         BigDecimal raizQ = new BigDecimal(raizQdr).setScale(2, RoundingMode.HALF_EVEN);        
         lblRaizQrd.setText(Double.toString(raizQ.doubleValue()));
         
-        //double raizCub =
-        //lblRaizCubica.setText(string);
+        double raizCub = Math.cbrt(valor);
+        BigDecimal raizCubica = new BigDecimal(raizCub).setScale(2, RoundingMode.HALF_EVEN);
+        lblRaizCubica.setText(Double.toString(raizCubica.doubleValue()));
+        
+        
     }//GEN-LAST:event_btnCalculaActionPerformed
 
     /**
