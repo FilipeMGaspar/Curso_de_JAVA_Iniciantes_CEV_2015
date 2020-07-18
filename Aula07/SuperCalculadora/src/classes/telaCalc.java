@@ -28,7 +28,8 @@ public class telaCalc extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jSpinner1 = new javax.swing.JSpinner();
+        valNum = new javax.swing.JSpinner();
+        btnCalcula = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -36,27 +37,32 @@ public class telaCalc extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 51, 255));
         jLabel1.setText("Super Calculadora");
 
+        btnCalcula.setText("Calcular");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(109, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(valNum, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32)
+                        .addComponent(btnCalcula))
+                    .addComponent(jLabel1))
                 .addGap(100, 100, 100))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(50, 50, 50)
-                .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addComponent(jLabel1)
-                .addGap(38, 38, 38)
-                .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(191, Short.MAX_VALUE))
+                .addGap(37, 37, 37)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(valNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCalcula))
+                .addContainerGap(189, Short.MAX_VALUE))
         );
 
         pack();
@@ -98,7 +104,8 @@ public class telaCalc extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCalcula;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner valNum;
     // End of variables declaration//GEN-END:variables
 }
