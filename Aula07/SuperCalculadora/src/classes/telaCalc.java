@@ -93,7 +93,7 @@ public class telaCalc extends javax.swing.JFrame {
     private void btnCalculaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculaActionPerformed
         // TODO add your handling code here:
         int valor = Integer.parseInt(valNum.getValue().toString());
-        
+        lblDivPor2.setText(Integer.toString((valor/2)));
     }//GEN-LAST:event_btnCalculaActionPerformed
 
     /**
