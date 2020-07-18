@@ -141,7 +141,10 @@ public class telaCalc extends javax.swing.JFrame {
         int valor = Integer.parseInt(valNum.getValue().toString());
         lblDivPor2.setText(Integer.toString((valor%2)));
         lblAoCubo.setText(Double.toString(Math.pow(valor, 3)));
-        lblRaizQrd.setText(Double.toString(Math.sqrt(valor)));
+        DecimalFormat df = new DecimalFormat("#.00");
+        double raizQ = Math.sqrt(valor);
+        df.format(raizQ);
+        //lblRaizQrd.setText(Double.toString();
     }//GEN-LAST:event_btnCalculaActionPerformed
 
     /**
