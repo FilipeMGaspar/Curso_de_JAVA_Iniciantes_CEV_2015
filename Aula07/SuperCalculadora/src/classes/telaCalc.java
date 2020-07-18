@@ -32,6 +32,8 @@ public class telaCalc extends javax.swing.JFrame {
         btnCalcula = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         lblDivPor2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        lblAoCubo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -53,6 +55,13 @@ public class telaCalc extends javax.swing.JFrame {
         lblDivPor2.setForeground(new java.awt.Color(0, 51, 204));
         lblDivPor2.setText("0");
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel3.setText("Elevado ao Cubo:");
+
+        lblAoCubo.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        lblAoCubo.setForeground(new java.awt.Color(0, 51, 204));
+        lblAoCubo.setText("0");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -60,6 +69,10 @@ public class telaCalc extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(109, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblAoCubo))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -84,7 +97,11 @@ public class telaCalc extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(lblDivPor2))
-                .addContainerGap(104, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(lblAoCubo))
+                .addContainerGap(64, Short.MAX_VALUE))
         );
 
         pack();
@@ -94,7 +111,7 @@ public class telaCalc extends javax.swing.JFrame {
         // TODO add your handling code here:
         int valor = Integer.parseInt(valNum.getValue().toString());
         lblDivPor2.setText(Integer.toString((valor%2)));
-        
+        lblAoCubo.setText(Double.toString(Math.pow(valor, 3)));
     }//GEN-LAST:event_btnCalculaActionPerformed
 
     /**
@@ -136,6 +153,8 @@ public class telaCalc extends javax.swing.JFrame {
     private javax.swing.JButton btnCalcula;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel lblAoCubo;
     private javax.swing.JLabel lblDivPor2;
     private javax.swing.JSpinner valNum;
     // End of variables declaration//GEN-END:variables
