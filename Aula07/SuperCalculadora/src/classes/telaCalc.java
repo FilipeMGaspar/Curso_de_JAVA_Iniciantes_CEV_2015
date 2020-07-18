@@ -5,6 +5,9 @@
  */
 package classes;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 /**
  *
  * @author user
@@ -139,12 +142,15 @@ public class telaCalc extends javax.swing.JFrame {
     private void btnCalculaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculaActionPerformed
         // TODO add your handling code here:
         int valor = Integer.parseInt(valNum.getValue().toString());
+        
         lblDivPor2.setText(Integer.toString((valor%2)));
-        lblAoCubo.setText(Double.toString(Math.pow(valor, 3)));
-        DecimalFormat df = new DecimalFormat("#.00");
-        double raizQ = Math.sqrt(valor);
-        df.format(raizQ);
-        //lblRaizQrd.setText(Double.toString();
+        
+        lblAoCubo.setText(Double.toString(Math.pow(valor, 3)));    
+        
+        double raizQdr = Math.sqrt(valor);
+        BigDecimal raizQ = new BigDecimal(raizQdr).setScale(2, RoundingMode.HALF_EVEN);        
+        lblRaizQrd.setText(Double.toString(raizQ.doubleValue()));
+        
     }//GEN-LAST:event_btnCalculaActionPerformed
 
     /**
