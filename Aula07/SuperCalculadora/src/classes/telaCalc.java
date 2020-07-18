@@ -47,7 +47,7 @@ public class telaCalc extends javax.swing.JFrame {
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setText("Divisão por 2:");
+        jLabel2.setText("Resto da Divisão por 2:");
 
         lblDivPor2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         lblDivPor2.setForeground(new java.awt.Color(0, 51, 204));
@@ -93,7 +93,8 @@ public class telaCalc extends javax.swing.JFrame {
     private void btnCalculaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalculaActionPerformed
         // TODO add your handling code here:
         int valor = Integer.parseInt(valNum.getValue().toString());
-        lblDivPor2.setText(Integer.toString((valor/2)));
+        lblDivPor2.setText(Integer.toString((valor%2)));
+        
     }//GEN-LAST:event_btnCalculaActionPerformed
 
     /**
