@@ -234,7 +234,8 @@ public class telaCalcula extends javax.swing.JFrame {
         lblAoCubo.setText(Double.toString(Math.pow(valor,3)));
         
         //raiz Quadrada
-        lblRaizQuad.setText(Double.toString(Math.cbrt(valor)));
+        Double raizQuad = Math.cbrt(valor);
+        lblRaizQuad.setText(String.format("%.2f", raizQuad));
        
         //panResult.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
