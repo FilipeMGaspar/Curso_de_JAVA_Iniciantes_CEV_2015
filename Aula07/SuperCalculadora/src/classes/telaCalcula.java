@@ -226,6 +226,8 @@ public class telaCalcula extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         int valor = Integer.parseInt(valNum.getValue().toString());
+        
+        //Resto da divisão por dois
         lblRestDivPor2.setText(Integer.toString(valor%2));
         //panResult.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
