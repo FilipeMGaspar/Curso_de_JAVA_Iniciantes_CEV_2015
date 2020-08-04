@@ -42,7 +42,7 @@ public class telaCalcula extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         lblRestDivPor2 = new javax.swing.JLabel();
         lblAoCubo = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
+        lblRaizQuad = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -105,9 +105,9 @@ public class telaCalcula extends javax.swing.JFrame {
         lblAoCubo.setForeground(new java.awt.Color(0, 0, 204));
         lblAoCubo.setText("0");
 
-        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 0, 204));
-        jLabel12.setText("0");
+        lblRaizQuad.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblRaizQuad.setForeground(new java.awt.Color(0, 0, 204));
+        lblRaizQuad.setText("0");
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(0, 0, 204));
@@ -135,7 +135,7 @@ public class telaCalcula extends javax.swing.JFrame {
                     .addGroup(panResultLayout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel12))
+                        .addComponent(lblRaizQuad))
                     .addGroup(panResultLayout.createSequentialGroup()
                         .addComponent(jLabel8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -160,7 +160,7 @@ public class telaCalcula extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(panResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jLabel12))
+                    .addComponent(lblRaizQuad))
                 .addGap(18, 18, 18)
                 .addGroup(panResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
@@ -232,6 +232,9 @@ public class telaCalcula extends javax.swing.JFrame {
         
         //Elevado ao cubo
         lblAoCubo.setText(Double.toString(Math.pow(valor,3)));
+        
+        //raiz Quadrada
+        lblRaizQuad.setText(Double.toString(Math.cbrt(valor)));
        
         //panResult.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -275,7 +278,6 @@ public class telaCalcula extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
@@ -287,6 +289,7 @@ public class telaCalcula extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel lblAoCubo;
+    private javax.swing.JLabel lblRaizQuad;
     private javax.swing.JLabel lblRestDivPor2;
     private javax.swing.JPanel panResult;
     private javax.swing.JSpinner valNum;
