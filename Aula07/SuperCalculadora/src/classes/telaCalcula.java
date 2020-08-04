@@ -44,7 +44,7 @@ public class telaCalcula extends javax.swing.JFrame {
         lblAoCubo = new javax.swing.JLabel();
         lblRaizQuad = new javax.swing.JLabel();
         lblRaizCubica = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        lblABS = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
 
         jLabel4.setText("jLabel4");
@@ -113,9 +113,9 @@ public class telaCalcula extends javax.swing.JFrame {
         lblRaizCubica.setForeground(new java.awt.Color(0, 0, 204));
         lblRaizCubica.setText("0");
 
-        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 204));
-        jLabel14.setText("0");
+        lblABS.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblABS.setForeground(new java.awt.Color(0, 0, 204));
+        lblABS.setText("0");
 
         javax.swing.GroupLayout panResultLayout = new javax.swing.GroupLayout(panResult);
         panResult.setLayout(panResultLayout);
@@ -143,7 +143,7 @@ public class telaCalcula extends javax.swing.JFrame {
                     .addGroup(panResultLayout.createSequentialGroup()
                         .addComponent(jLabel9)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel14)))
+                        .addComponent(lblABS)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panResultLayout.setVerticalGroup(
@@ -168,7 +168,7 @@ public class telaCalcula extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(panResultLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
-                    .addComponent(jLabel14))
+                    .addComponent(lblABS))
                 .addContainerGap(27, Short.MAX_VALUE))
         );
 
@@ -242,6 +242,10 @@ public class telaCalcula extends javax.swing.JFrame {
         //Raiz Cúbica
         Double raizCubica = Math.cbrt(valor);
         lblRaizCubica.setText(String.format("%.2f", raizCubica));
+        
+        //valor absoluto
+        lblABS.setText(Integer.toString(Math.abs(valor)));
+        
         //panResult.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -284,7 +288,6 @@ public class telaCalcula extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -293,6 +296,7 @@ public class telaCalcula extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel lblABS;
     private javax.swing.JLabel lblAoCubo;
     private javax.swing.JLabel lblRaizCubica;
     private javax.swing.JLabel lblRaizQuad;
