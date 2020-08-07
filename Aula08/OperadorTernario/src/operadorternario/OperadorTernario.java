@@ -16,9 +16,10 @@ public class OperadorTernario {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int n1, n2;
+        int n1, n2, r;
         n1 = 4;
         n2 = 8;
+        
     }
     
 }
