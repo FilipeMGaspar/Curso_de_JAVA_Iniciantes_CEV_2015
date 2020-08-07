@@ -20,6 +20,7 @@ public class OperadorTernario {
         n1 = 4;
         n2 = 8;
         r = (n1>n2) ? 0 : 1;
+        System.out.println(r);
     }
     
 }
