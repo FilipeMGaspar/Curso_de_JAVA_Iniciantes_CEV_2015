@@ -18,6 +18,7 @@ public class OperadorTernario {
         // TODO code application logic here
         int n1, n2;
         n1 = 4;
+        n2 = 8;
     }
     
 }
