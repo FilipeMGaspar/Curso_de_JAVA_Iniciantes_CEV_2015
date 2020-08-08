@@ -22,7 +22,8 @@ public class OperadoresLogicos {
         z = 12;
         boolean r;
         r = (x<y && y<z)? true : false;
-        
+        System.out.println(r);
+              
     }
     
 }
