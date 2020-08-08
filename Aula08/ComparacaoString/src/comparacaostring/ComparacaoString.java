@@ -19,6 +19,8 @@ public class ComparacaoString {
         String nome1 = "Gustavo";
         String nome2 = "Gustavo";
         String nome3 = new String("Gustavo");
+        
+        String res = (nome1==nome2)?"Igual":"Diferente"
     }
     
 }
