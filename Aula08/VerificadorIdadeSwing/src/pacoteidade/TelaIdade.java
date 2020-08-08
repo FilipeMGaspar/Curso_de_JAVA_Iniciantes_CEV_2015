@@ -110,6 +110,7 @@ public class TelaIdade extends javax.swing.JFrame {
         int ano = Integer.parseInt(txtAno.getText());
         int idade = 2015 - ano;
         lblIdade.setText(Integer.toString(idade));
+        String sit = (idade>=18) ? "Maior": "MENOR";
         
     }//GEN-LAST:event_btnCalcActionPerformed
 
