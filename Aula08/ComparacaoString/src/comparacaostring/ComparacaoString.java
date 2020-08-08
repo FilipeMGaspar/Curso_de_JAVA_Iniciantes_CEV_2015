@@ -20,7 +20,7 @@ public class ComparacaoString {
         String nome2 = "Gustavo";
         String nome3 = new String("Gustavo");
         
-        String res = (nome1==nome2)?"Igual":"Diferente";
+        String res = (nome1==nome3)?"Igual":"Diferente";
         
         System.out.println(res);
     }
