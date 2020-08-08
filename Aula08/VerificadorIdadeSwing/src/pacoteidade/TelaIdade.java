@@ -32,7 +32,7 @@ public class TelaIdade extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         txtAno = new javax.swing.JTextField();
         btnCalc = new javax.swing.JButton();
-        lbIidade = new javax.swing.JLabel();
+        lblIdade = new javax.swing.JLabel();
         lblSituacao = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -50,9 +50,9 @@ public class TelaIdade extends javax.swing.JFrame {
             }
         });
 
-        lbIidade.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lbIidade.setForeground(new java.awt.Color(51, 51, 255));
-        lbIidade.setText("0");
+        lblIdade.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblIdade.setForeground(new java.awt.Color(51, 51, 255));
+        lblIdade.setText("0");
 
         lblSituacao.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblSituacao.setForeground(new java.awt.Color(0, 51, 204));
@@ -78,7 +78,7 @@ public class TelaIdade extends javax.swing.JFrame {
                             .addComponent(jLabel2))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lbIidade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(lblIdade, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblSituacao, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -93,7 +93,7 @@ public class TelaIdade extends javax.swing.JFrame {
                 .addComponent(btnCalc)
                 .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbIidade)
+                    .addComponent(lblIdade)
                     .addComponent(jLabel2))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -107,6 +107,9 @@ public class TelaIdade extends javax.swing.JFrame {
 
     private void btnCalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcActionPerformed
         // TODO add your handling code here:
+        int ano = Integer.parseInt(txtAno.getText());
+        int idade = 2015 - ano;
+        lblIdade.setText(Integer.toString(idade));
         
     }//GEN-LAST:event_btnCalcActionPerformed
 
@@ -150,7 +153,7 @@ public class TelaIdade extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel lbIidade;
+    private javax.swing.JLabel lblIdade;
     private javax.swing.JLabel lblSituacao;
     private javax.swing.JTextField txtAno;
     // End of variables declaration//GEN-END:variables
