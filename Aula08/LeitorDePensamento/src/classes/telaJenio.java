@@ -77,6 +77,10 @@ public class telaJenio extends javax.swing.JFrame {
         double pensGenio = 1 + Math.random() * (6 - 1);
         int pensouGenio = (int)pensGenio;
         int palpite = Integer.parseInt(nrPalpite.getValue().toString());
+        
+        String f1 = "ACERTOU";
+        String f2 = "ERROU! Eu pensei no valor "+ pensouGenio;
+        
         lblFrase.setText(Integer.toString(pensouGenio));
     }//GEN-LAST:event_btnPalpiteActionPerformed
 
