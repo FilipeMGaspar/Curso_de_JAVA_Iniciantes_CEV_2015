@@ -16,6 +16,7 @@ public class telaJenio extends javax.swing.JFrame {
      */
     public telaJenio() {
         initComponents();
+        lblFrase.setText("<html>Estou a pensar num número entre <strong>1 e 5</strong>. Tente adivinhar!</html>");
     }
 
     /**
@@ -32,7 +33,7 @@ public class telaJenio extends javax.swing.JFrame {
         jSpinner1 = new javax.swing.JSpinner();
         jButton1 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        lblFrase = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -55,8 +56,9 @@ public class telaJenio extends javax.swing.JFrame {
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
 
-        jLabel6.setText("jLabel6");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, -1, -1));
+        lblFrase.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblFrase.setText("Frase");
+        getContentPane().add(lblFrase, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 100, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/balaoGenio.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, -1, -1));
@@ -105,7 +107,7 @@ public class telaJenio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JLabel lblFrase;
     // End of variables declaration//GEN-END:variables
 }
