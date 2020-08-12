@@ -6,6 +6,7 @@
 package classes;
 
 import java.awt.Font;
+import static javafx.scene.text.Font.font;
 
 /**
  *
@@ -85,7 +86,8 @@ public class telaJenio extends javax.swing.JFrame {
         
         String resp = (pensouGenio == palpite) ? f1 : f2;
         
-       // lblFrase.setFont(new Font());
+       /*lblFrase.setFont(new Font("Arial Black"),Font.PLAIN,12);*/
+       lblFrase.setFont(new Font("Arial Black", Font.PLAIN, 16));
               
         lblFrase.setText(resp);
     }//GEN-LAST:event_btnPalpiteActionPerformed
