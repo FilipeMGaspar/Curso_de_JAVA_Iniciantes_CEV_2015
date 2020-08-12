@@ -30,8 +30,8 @@ public class telaJenio extends javax.swing.JFrame {
 
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jSpinner1 = new javax.swing.JSpinner();
-        jButton1 = new javax.swing.JButton();
+        nrPalpite = new javax.swing.JSpinner();
+        btnPalpite = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         lblFrase = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -46,17 +46,22 @@ public class telaJenio extends javax.swing.JFrame {
         jLabel4.setText("O seu palpite");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
 
-        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(1, 1, 5, 1));
-        getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 80, -1));
+        nrPalpite.setModel(new javax.swing.SpinnerNumberModel(1, 1, 5, 1));
+        getContentPane().add(nrPalpite, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 60, -1));
 
-        jButton1.setText("Dar Palpite");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, -1, -1));
+        btnPalpite.setText("Dar Palpite");
+        btnPalpite.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPalpiteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnPalpite, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
 
-        lblFrase.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        lblFrase.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblFrase.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblFrase.setText("Frase");
         getContentPane().add(lblFrase, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 80, 170, 70));
@@ -66,6 +71,12 @@ public class telaJenio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnPalpiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPalpiteActionPerformed
+        // TODO add your handling code here:
+        int palpite = Integer.parseInt(nrPalpite.getValue().toString());
+        
+    }//GEN-LAST:event_btnPalpiteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -103,12 +114,12 @@ public class telaJenio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnPalpite;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JSpinner jSpinner1;
     private javax.swing.JLabel lblFrase;
+    private javax.swing.JSpinner nrPalpite;
     // End of variables declaration//GEN-END:variables
 }
