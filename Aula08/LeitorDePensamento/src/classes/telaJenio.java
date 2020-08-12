@@ -47,7 +47,7 @@ public class telaJenio extends javax.swing.JFrame {
 
         jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 310, -1, -1));
-        getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, -1, -1));
+        getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 310, 80, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
