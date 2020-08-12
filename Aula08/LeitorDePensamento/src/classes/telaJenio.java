@@ -5,6 +5,8 @@
  */
 package classes;
 
+import java.awt.Font;
+
 /**
  *
  * @author user
@@ -83,6 +85,8 @@ public class telaJenio extends javax.swing.JFrame {
         
         String resp = (pensouGenio == palpite) ? f1 : f2;
         
+       // lblFrase.setFont(new Font());
+              
         lblFrase.setText(resp);
     }//GEN-LAST:event_btnPalpiteActionPerformed
 
