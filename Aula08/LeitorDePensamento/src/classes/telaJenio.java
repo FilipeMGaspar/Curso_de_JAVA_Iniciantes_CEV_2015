@@ -78,8 +78,8 @@ public class telaJenio extends javax.swing.JFrame {
         int pensouGenio = (int)pensGenio;
         int palpite = Integer.parseInt(nrPalpite.getValue().toString());
         
-        String f1 = "ACERTOU";
-        String f2 = "ERROU! Eu pensei no valor "+ pensouGenio;
+        String f1 = "<html>ACERTOU!</html>";
+        String f2 = "<html>ERROU! Eu pensei no valor "+ pensouGenio +"</html>";
         
         String resp = (pensouGenio == palpite) ? f1 : f2;
         
