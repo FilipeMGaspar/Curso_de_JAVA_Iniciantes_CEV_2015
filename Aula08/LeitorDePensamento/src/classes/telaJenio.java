@@ -16,7 +16,7 @@ public class telaJenio extends javax.swing.JFrame {
      */
     public telaJenio() {
         initComponents();
-        lblFrase.setText("<html>Estou a pensar num número entre <strong>1 e 5</strong>. Tente adivinhar!</html>");
+        lblFrase.setText("<html>Estou a pensar num número entre 1 e 5. Tente adivinhar!</html>");
     }
 
     /**
