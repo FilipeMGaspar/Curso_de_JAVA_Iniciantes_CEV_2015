@@ -49,6 +49,8 @@ public class telaJenio extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setText("O seu palpite");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
+
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(0, 0, 5, 1));
         getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 80, -1));
 
         jButton1.setText("Dar Palpite");
