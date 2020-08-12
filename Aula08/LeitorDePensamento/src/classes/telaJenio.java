@@ -51,8 +51,8 @@ public class telaJenio extends javax.swing.JFrame {
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
         getContentPane().add(jSpinner1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 310, 80, -1));
 
-        jButton1.setText("jButton1");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, -1, -1));
+        jButton1.setText("Dar Palpite");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
