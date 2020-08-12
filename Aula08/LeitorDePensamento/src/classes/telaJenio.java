@@ -74,8 +74,9 @@ public class telaJenio extends javax.swing.JFrame {
 
     private void btnPalpiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPalpiteActionPerformed
         // TODO add your handling code here:
+        double pensGenio = 5 + Math.random() * (5 - 1);
         int palpite = Integer.parseInt(nrPalpite.getValue().toString());
-        lblFrase.setText(Integer.toString(palpite));
+        lblFrase.setText(Double.toString(pensGenio));
     }//GEN-LAST:event_btnPalpiteActionPerformed
 
     /**
