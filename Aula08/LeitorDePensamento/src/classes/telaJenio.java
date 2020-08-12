@@ -81,7 +81,9 @@ public class telaJenio extends javax.swing.JFrame {
         String f1 = "ACERTOU";
         String f2 = "ERROU! Eu pensei no valor "+ pensouGenio;
         
-        lblFrase.setText(Integer.toString(pensouGenio));
+        String resp = (pensouGenio == palpite) ? f1 : f2;
+        
+        lblFrase.setText(resp);
     }//GEN-LAST:event_btnPalpiteActionPerformed
 
     /**
