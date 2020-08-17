@@ -22,11 +22,11 @@ public class ProgramaIdade {
         System.out.print("Indique a sua data de Nascimento: ");
         int nas = teclado.nextInt();
         int idade = 2020 - nas;
-        System.out.print("A sua idade é: " + idade+ " logo você é. ");
+        System.out.print("Você tem " + idade+ " anos, você é ");
         if(idade>=18){
-            System.out.println("Maior de Idade!");
+            System.out.println("maior de Idade!");
         }else{
-            System.out.println("Menor de Idade");
+            System.out.println("menor de Idade!");
         }
     }
     
