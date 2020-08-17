@@ -24,7 +24,7 @@ public class ProgramaMedia {
         float m = (n1+n2)/2;
         System.out.println("A sua media foi: "+ m);
         if(m>9){
-            
+            System.out.println("Parabéns");
         }
     }
     
