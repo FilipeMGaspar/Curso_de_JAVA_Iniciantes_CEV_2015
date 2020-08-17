@@ -18,7 +18,9 @@ public class ProgramaIdade {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Scanner teclado = new Scanner(system.in);
+        Scanner teclado = new Scanner(System.in);
+        
+        int nas = teclado.nextInt();
         
     }
     
