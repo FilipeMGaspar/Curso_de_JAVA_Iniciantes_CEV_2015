@@ -90,9 +90,9 @@ public class TelaParImpar extends javax.swing.JFrame {
         int valor = Integer.parseInt(txtValor.getText());
         
         if(valor%2 == 0){
-            lblResultado.setText(Integer.toHexString(valor) + " é PAR");
+            lblResultado.setText(Integer.toString(valor) + " é PAR");
         }else{
-            
+            lblResultado.setText(Integer.toHexString(valor));
         }
     }//GEN-LAST:event_btnVerificarActionPerformed
 
