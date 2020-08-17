@@ -30,7 +30,7 @@ public class TelaParImpar extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         txtValor = new javax.swing.JTextField();
         btnVerificar = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        lblResultado = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,9 +45,9 @@ public class TelaParImpar extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel2.setText("Resultado");
+        lblResultado.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblResultado.setForeground(new java.awt.Color(0, 51, 204));
+        lblResultado.setText("Resultado");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -57,7 +57,7 @@ public class TelaParImpar extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(35, 35, 35)
-                        .addComponent(jLabel2))
+                        .addComponent(lblResultado))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(78, 78, 78)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -78,7 +78,7 @@ public class TelaParImpar extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addComponent(btnVerificar, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(19, 19, 19)
-                .addComponent(jLabel2)
+                .addComponent(lblResultado)
                 .addContainerGap(56, Short.MAX_VALUE))
         );
 
@@ -87,6 +87,7 @@ public class TelaParImpar extends javax.swing.JFrame {
 
     private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
         // TODO add your handling code here:
+        int valor = Integer.parseInt(txtValor.getText());
     }//GEN-LAST:event_btnVerificarActionPerformed
 
     /**
@@ -127,7 +128,7 @@ public class TelaParImpar extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnVerificar;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel lblResultado;
     private javax.swing.JTextField txtValor;
     // End of variables declaration//GEN-END:variables
 }
