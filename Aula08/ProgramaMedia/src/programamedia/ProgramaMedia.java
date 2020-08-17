@@ -22,7 +22,7 @@ public class ProgramaMedia {
         float n1 = teclado.nextFloat();
         float n2 = teclado.nextFloat();
         float m = (n1+n2)/2;
-        System.out.println("");
+        System.out.println("A sua media foi: "+ m);
     }
     
 }
