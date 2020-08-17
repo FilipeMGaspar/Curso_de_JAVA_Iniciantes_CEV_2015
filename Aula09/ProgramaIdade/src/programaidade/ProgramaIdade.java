@@ -19,7 +19,7 @@ public class ProgramaIdade {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner teclado = new Scanner(System.in);
-        System.out.print("Indique a sua data de Nascimento: ");
+        System.out.print("Indique a sua data de nascimento: ");
         int nas = teclado.nextInt();
         int idade = 2020 - nas;
         System.out.print("Você tem " + idade+ " anos, você é ");
