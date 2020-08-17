@@ -21,7 +21,8 @@ public class ProgramaIdade {
         Scanner teclado = new Scanner(System.in);
         System.out.print("Indique a sua data de Nascimento: ");
         int nas = teclado.nextInt();
-        
+        int idade = 2020 - nas;
+        if()
     }
     
 }
