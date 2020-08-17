@@ -88,6 +88,10 @@ public class TelaParImpar extends javax.swing.JFrame {
     private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
         // TODO add your handling code here:
         int valor = Integer.parseInt(txtValor.getText());
+        
+        if(valor%2 == 0){
+            lblResultado.setText(Integer.toHexString(valor) + " é PAR");
+        }
     }//GEN-LAST:event_btnVerificarActionPerformed
 
     /**
