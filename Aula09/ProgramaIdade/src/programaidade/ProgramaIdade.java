@@ -24,9 +24,9 @@ public class ProgramaIdade {
         int idade = 2020 - nas;
         System.out.print("Você tem " + idade+ " anos, você é ");
         if(idade>=18){
-            System.out.println("maior de Idade!");
+            System.out.println("maior de idade!");
         }else{
-            System.out.println("menor de Idade!");
+            System.out.println("menor de idade!");
         }
     }
     
