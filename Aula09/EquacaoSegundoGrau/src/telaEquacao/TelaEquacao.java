@@ -37,7 +37,7 @@ public class TelaEquacao extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         lblA = new javax.swing.JLabel();
         lblB = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        lblC = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
@@ -74,8 +74,8 @@ public class TelaEquacao extends javax.swing.JFrame {
         lblB.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         lblB.setText("<html>B<sup>2</sup></html>");
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel8.setText("C");
+        lblC.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        lblC.setText("C");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel9.setText("<html>&Delta; = </html>");
@@ -117,7 +117,7 @@ public class TelaEquacao extends javax.swing.JFrame {
                                 .addGap(2, 2, 2)
                                 .addComponent(jLabel7)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel8)
+                                .addComponent(lblC)
                                 .addGap(8, 8, 8))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(txtA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -156,7 +156,7 @@ public class TelaEquacao extends javax.swing.JFrame {
                     .addComponent(jLabel10)
                     .addComponent(lblA)
                     .addComponent(jLabel11)
-                    .addComponent(jLabel8)
+                    .addComponent(lblC)
                     .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel12))
                 .addContainerGap(83, Short.MAX_VALUE))
@@ -210,10 +210,10 @@ public class TelaEquacao extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel lblA;
     private javax.swing.JLabel lblB;
+    private javax.swing.JLabel lblC;
     private javax.swing.JSpinner txtA;
     private javax.swing.JSpinner txtB;
     private javax.swing.JSpinner txtC;
