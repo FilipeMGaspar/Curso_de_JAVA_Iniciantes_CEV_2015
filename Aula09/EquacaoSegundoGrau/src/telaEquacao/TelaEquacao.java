@@ -16,6 +16,7 @@ public class TelaEquacao extends javax.swing.JFrame {
      */
     public TelaEquacao() {
         initComponents();
+        panResultado.setVisible(false);
     }
 
     /**
@@ -280,6 +281,7 @@ public class TelaEquacao extends javax.swing.JFrame {
 
     private void btnCalcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcActionPerformed
         // TODO add your handling code here:
+        panResultado.setVisible(true);
     }//GEN-LAST:event_btnCalcActionPerformed
 
     /**
