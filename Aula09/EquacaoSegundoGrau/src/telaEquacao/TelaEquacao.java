@@ -49,6 +49,11 @@ public class TelaEquacao extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         txtA.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        txtA.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                txtAStateChanged(evt);
+            }
+        });
 
         txtB.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
@@ -184,6 +189,11 @@ public class TelaEquacao extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtAStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_txtAStateChanged
+        // TODO add your handling code here:
+        lblA.setText(txtA.getValue().toString());
+    }//GEN-LAST:event_txtAStateChanged
 
     /**
      * @param args the command line arguments
