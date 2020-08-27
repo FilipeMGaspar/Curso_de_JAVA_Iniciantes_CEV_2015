@@ -97,6 +97,15 @@ public class TelaVoto extends javax.swing.JFrame {
     private void btnVotoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVotoActionPerformed
         // TODO add your handling code here:
         int anoNasc = Integer.parseInt(txtAnoNasc.getText());
+        int idade = 2015 - anoNasc;
+        
+        if(idade<16){
+            lblResultado.setText("Não Vota!");
+        }else{
+            if((idade>=16 && idade < 18) || (idade>70)){
+                lblResultado.setText("Voto Opcional!");
+            }
+        }
     }//GEN-LAST:event_btnVotoActionPerformed
 
     /**
