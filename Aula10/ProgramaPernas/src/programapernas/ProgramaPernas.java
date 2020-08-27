@@ -22,7 +22,7 @@ public class ProgramaPernas {
         System.out.print("Quantas pernas: ");
         int pernas = tec.nextInt();
         String tipo;
-        System.out.println("Isso é um(a): ");
+        System.out.print("Isso é um(a): ");
         switch(pernas){
             case 1:
                 tipo = "Saci";
