@@ -21,7 +21,10 @@ public class ProgramaPernas {
         Scanner tec = new Scanner(System.in);
         System.out.print("Quantas pernas: ");
         int pernas = tec.nextInt();
-        
+        System.out.println("Isso é um(a): ");
+        switch(pernas){
+            
+        }
     }
     
 }
