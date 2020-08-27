@@ -116,7 +116,7 @@ public class TelaVoto extends javax.swing.JFrame {
         int anoNasc = Integer.parseInt(txtAnoNasc.getText());
         int idade = 2015 - anoNasc;
         
-        lblIdade.setText(Integer.toString(idade));
+        lblIdade.setText(Integer.toString(idade)+" Anos");
         if(idade<16){
             lblResultado.setText("Não Vota!");
         }else{
