@@ -25,7 +25,10 @@ public class ProgramaPernas {
         System.out.println("Isso é um(a): ");
         switch(pernas){
             case 1:
-                
+                tipo = "Saci";
+                break;
+            case 2:
+                tipo = "Bipede";
                 break;
         }
     }
