@@ -33,7 +33,9 @@ public class ProgramaPernas {
             case 3:
                 tipo = "Tripé";
                 break;
-                
+            case 4:
+                tipo = "";
+                break;
         }
     }
     
