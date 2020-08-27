@@ -39,7 +39,11 @@ public class ProgramaPernas {
             case 6:
                 tipo = "Aranha";
                 break;
+            default:
+                tipo = "ET";
+                break;
         }
+        System.out.println(tipo);
     }
     
 }
