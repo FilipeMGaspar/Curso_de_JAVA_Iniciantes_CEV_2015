@@ -30,6 +30,10 @@ public class ProgramaPernas {
             case 2:
                 tipo = "Bipede";
                 break;
+            case 3:
+                tipo = "Tripé";
+                break;
+                
         }
     }
     
