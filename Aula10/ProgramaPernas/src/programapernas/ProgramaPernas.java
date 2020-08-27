@@ -34,7 +34,10 @@ public class ProgramaPernas {
                 tipo = "Tripé";
                 break;
             case 4:
-                tipo = "";
+                tipo = "Quadrupede";
+                break;
+            case 6:
+                tipo = "Aranha";
                 break;
         }
     }
