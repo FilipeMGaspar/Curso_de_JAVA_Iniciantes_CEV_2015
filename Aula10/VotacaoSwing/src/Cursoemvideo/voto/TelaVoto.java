@@ -104,6 +104,8 @@ public class TelaVoto extends javax.swing.JFrame {
         }else{
             if((idade>=16 && idade < 18) || (idade>70)){
                 lblResultado.setText("Voto Opcional!");
+            }else{
+                lblResultado.setText("Voto Obrigatório!");
             }
         }
     }//GEN-LAST:event_btnVotoActionPerformed
