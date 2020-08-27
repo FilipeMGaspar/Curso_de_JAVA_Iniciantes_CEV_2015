@@ -33,7 +33,7 @@ public class TelaVoto extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         lblResultado = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        lblIdade = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -59,9 +59,9 @@ public class TelaVoto extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(0, 0, 204));
         jLabel3.setText("Idade: ");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(153, 51, 0));
-        jLabel4.setText("0");
+        lblIdade.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
+        lblIdade.setForeground(new java.awt.Color(153, 51, 0));
+        lblIdade.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -84,7 +84,7 @@ public class TelaVoto extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel4)))
+                                .addComponent(lblIdade)))
                         .addGap(45, 45, 45)))
                 .addContainerGap(126, Short.MAX_VALUE))
         );
@@ -100,7 +100,7 @@ public class TelaVoto extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jLabel4))
+                    .addComponent(lblIdade))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
@@ -116,6 +116,7 @@ public class TelaVoto extends javax.swing.JFrame {
         int anoNasc = Integer.parseInt(txtAnoNasc.getText());
         int idade = 2015 - anoNasc;
         
+        lblIdade.setText(Integer.toString(idade));
         if(idade<16){
             lblResultado.setText("Não Vota!");
         }else{
@@ -167,7 +168,7 @@ public class TelaVoto extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel lblIdade;
     private javax.swing.JLabel lblResultado;
     private javax.swing.JTextField txtAnoNasc;
     // End of variables declaration//GEN-END:variables
