@@ -220,7 +220,10 @@ public class TelaTriangulo extends javax.swing.JFrame {
          int b = sliB.getValue();
          int c = sliC.getValue();
          if(a<(b+c) && b<(a+c) && c<(a+b)){
-             lblFormaT.setText(string);
+             lblFormaT.setText("Forma um Triangulo");
+         }else{
+             lblFormaT.setText("NÃO Forma um Triangulo");
+             lblTipoT.setText("-------");
          }
         panResp.setVisible(true);
     }//GEN-LAST:event_btnVerificarActionPerformed
