@@ -40,11 +40,11 @@ public class TelaTriangulo extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("jLabel1");
+        jLabel1.setText("Segmento A");
 
-        jLabel2.setText("jLabel2");
+        jLabel2.setText("Segmento B");
 
-        jLabel3.setText("jLabel3");
+        jLabel3.setText("Segmento C");
 
         jLabel4.setText("jLabel4");
 
@@ -82,7 +82,7 @@ public class TelaTriangulo extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel5)
                             .addComponent(jLabel4))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                         .addComponent(jLabel7)))
                 .addContainerGap())
         );
