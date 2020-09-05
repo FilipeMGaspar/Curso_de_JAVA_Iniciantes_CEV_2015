@@ -16,6 +16,7 @@ public class TelaTriangulo extends javax.swing.JFrame {
      */
     public TelaTriangulo() {
         initComponents();
+        panResp.setVisible(false);
     }
 
     /**
@@ -39,7 +40,7 @@ public class TelaTriangulo extends javax.swing.JFrame {
         lblC = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         btnVerificar = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
+        panResp = new javax.swing.JPanel();
         lblFormaT = new javax.swing.JLabel();
         lblTipoT = new javax.swing.JLabel();
 
@@ -81,6 +82,11 @@ public class TelaTriangulo extends javax.swing.JFrame {
 
         btnVerificar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnVerificar.setText("Verificar");
+        btnVerificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVerificarActionPerformed(evt);
+            }
+        });
 
         lblFormaT.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         lblFormaT.setForeground(new java.awt.Color(0, 51, 153));
@@ -92,20 +98,20 @@ public class TelaTriangulo extends javax.swing.JFrame {
         lblTipoT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTipoT.setText("Tipo de Triangulo");
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout panRespLayout = new javax.swing.GroupLayout(panResp);
+        panResp.setLayout(panRespLayout);
+        panRespLayout.setHorizontalGroup(
+            panRespLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panRespLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panRespLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblFormaT, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(lblTipoT, javax.swing.GroupLayout.DEFAULT_SIZE, 413, Short.MAX_VALUE))
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        panRespLayout.setVerticalGroup(
+            panRespLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panRespLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblFormaT)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 34, Short.MAX_VALUE)
@@ -121,7 +127,7 @@ public class TelaTriangulo extends javax.swing.JFrame {
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(panResp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 14, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -177,12 +183,17 @@ public class TelaTriangulo extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addComponent(btnVerificar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panResp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
+        // TODO add your handling code here:
+        panResp.setVisible(true);
+    }//GEN-LAST:event_btnVerificarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -225,13 +236,13 @@ public class TelaTriangulo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel lblA;
     private javax.swing.JLabel lblB;
     private javax.swing.JLabel lblC;
     private javax.swing.JLabel lblFormaT;
     private javax.swing.JLabel lblTipoT;
+    private javax.swing.JPanel panResp;
     private javax.swing.JSlider sliA;
     private javax.swing.JSlider sliB;
     private javax.swing.JSlider sliC;
