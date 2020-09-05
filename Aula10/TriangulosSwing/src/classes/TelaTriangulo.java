@@ -66,6 +66,20 @@ public class TelaTriangulo extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel3.setText("Segmento C");
 
+        sliA.setMaximum(20);
+        sliA.setValue(0);
+        sliA.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sliAStateChanged(evt);
+            }
+        });
+
+        sliB.setMaximum(20);
+        sliB.setValue(0);
+
+        sliC.setMaximum(20);
+        sliC.setValue(0);
+
         lblA.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblA.setForeground(new java.awt.Color(153, 153, 153));
         lblA.setText("0");
@@ -194,6 +208,11 @@ public class TelaTriangulo extends javax.swing.JFrame {
         // TODO add your handling code here:
         panResp.setVisible(true);
     }//GEN-LAST:event_btnVerificarActionPerformed
+
+    private void sliAStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliAStateChanged
+        // TODO add your handling code here:
+        lblA.setText(Integer.toString(sliA.getValue()));
+    }//GEN-LAST:event_sliAStateChanged
 
     /**
      * @param args the command line arguments
