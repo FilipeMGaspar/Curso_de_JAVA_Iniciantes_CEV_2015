@@ -76,6 +76,11 @@ public class TelaTriangulo extends javax.swing.JFrame {
 
         sliB.setMaximum(20);
         sliB.setValue(0);
+        sliB.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sliBStateChanged(evt);
+            }
+        });
 
         sliC.setMaximum(20);
         sliC.setValue(0);
@@ -213,6 +218,11 @@ public class TelaTriangulo extends javax.swing.JFrame {
         // TODO add your handling code here:
         lblA.setText(Integer.toString(sliA.getValue()));
     }//GEN-LAST:event_sliAStateChanged
+
+    private void sliBStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliBStateChanged
+        // TODO add your handling code here:
+        lblB.setText(Integer.toString(sliB.getValue()));
+    }//GEN-LAST:event_sliBStateChanged
 
     /**
      * @param args the command line arguments
