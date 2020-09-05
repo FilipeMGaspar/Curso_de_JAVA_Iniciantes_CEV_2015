@@ -84,6 +84,11 @@ public class TelaTriangulo extends javax.swing.JFrame {
 
         sliC.setMaximum(20);
         sliC.setValue(0);
+        sliC.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                sliCStateChanged(evt);
+            }
+        });
 
         lblA.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         lblA.setForeground(new java.awt.Color(153, 153, 153));
@@ -211,6 +216,12 @@ public class TelaTriangulo extends javax.swing.JFrame {
 
     private void btnVerificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerificarActionPerformed
         // TODO add your handling code here:
+         int a = sliA.getValue();
+         int b = sliB.getValue();
+         int c = sliC.getValue();
+         if(a<(b+c) && b<(a+c) && c<(a+b)){
+             lblFormaT.setText(string);
+         }
         panResp.setVisible(true);
     }//GEN-LAST:event_btnVerificarActionPerformed
 
@@ -223,6 +234,11 @@ public class TelaTriangulo extends javax.swing.JFrame {
         // TODO add your handling code here:
         lblB.setText(Integer.toString(sliB.getValue()));
     }//GEN-LAST:event_sliBStateChanged
+
+    private void sliCStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sliCStateChanged
+        // TODO add your handling code here:
+        lblC.setText(Integer.toString(sliC.getValue()));
+    }//GEN-LAST:event_sliCStateChanged
 
     /**
      * @param args the command line arguments
@@ -254,7 +270,7 @@ public class TelaTriangulo extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaTriangulo().setVisible(true);
+            new TelaTriangulo().setVisible(true);
             }
         });
     }
