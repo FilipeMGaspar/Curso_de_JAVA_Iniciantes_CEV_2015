@@ -221,6 +221,11 @@ public class TelaTriangulo extends javax.swing.JFrame {
          int c = sliC.getValue();
          if(a<(b+c) && b<(a+c) && c<(a+b)){
              lblFormaT.setText("Forma um Triangulo");
+             if(a==b && b==C){
+                 lblTipoT.setText("Equilatero"); 
+             }else if (a!=b && b!=c && a!=c){
+                 
+             }
          }else{
              lblFormaT.setText("NÃO Forma um Triangulo");
              lblTipoT.setText("-------");
