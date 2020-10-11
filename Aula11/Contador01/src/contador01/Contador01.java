@@ -16,9 +16,9 @@ public class Contador01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int cc = 0;
-        while(cc<4){
-            System.out.println("Maria Inês" + cc);
+        int cc = 1;
+        while(cc<5){
+            System.out.println("Maria Inês " + cc +"º");
             cc++;
         }
     }
