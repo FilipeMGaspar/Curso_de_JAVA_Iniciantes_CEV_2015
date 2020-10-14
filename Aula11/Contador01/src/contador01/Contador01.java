@@ -19,6 +19,9 @@ public class Contador01 {
         int cc = 0;
         while(cc<10){
             cc++;
+            if(cc == 5 || cc == 7){
+                
+            }
             System.out.println("Cambalhota! " + cc);
         }
     }
