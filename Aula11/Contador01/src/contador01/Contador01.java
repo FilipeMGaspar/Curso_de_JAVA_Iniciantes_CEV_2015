@@ -22,7 +22,7 @@ public class Contador01 {
             if(cc == 2 || cc == 3 || cc == 4){
                 continue;
             }
-            if (cc==7){
+            if (cc == 7){
                 break;
             }
             System.out.println("Cambalhota! " + cc);
