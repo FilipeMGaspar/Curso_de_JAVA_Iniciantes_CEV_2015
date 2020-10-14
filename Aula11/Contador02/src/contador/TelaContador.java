@@ -39,6 +39,11 @@ public class TelaContador extends javax.swing.JFrame {
         lblContagem.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
 
         btnContar.setText("Contar");
+        btnContar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnContarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -67,6 +72,15 @@ public class TelaContador extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnContarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContarActionPerformed
+        // TODO add your handling code here:
+        int cc = 0;
+        String contagem = "";
+        while(cc < 5){
+            
+        }
+    }//GEN-LAST:event_btnContarActionPerformed
 
     /**
      * @param args the command line arguments
