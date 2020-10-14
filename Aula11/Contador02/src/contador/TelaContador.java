@@ -75,11 +75,13 @@ public class TelaContador extends javax.swing.JFrame {
 
     private void btnContarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContarActionPerformed
         // TODO add your handling code here:
-        int cc = 0;
+        int cc = 1;
         String contagem = "";
-        while(cc < 5){
+        while(cc <= 5){
             contagem += cc + " ";
+            cc++;
         }
+        lblContagem.setText(contagem);
     }//GEN-LAST:event_btnContarActionPerformed
 
     /**
