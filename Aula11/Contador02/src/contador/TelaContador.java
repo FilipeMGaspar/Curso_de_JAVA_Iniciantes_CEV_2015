@@ -78,7 +78,7 @@ public class TelaContador extends javax.swing.JFrame {
         int cc = 0;
         String contagem = "";
         while(cc < 5){
-            
+            contagem += cc + " ";
         }
     }//GEN-LAST:event_btnContarActionPerformed
 
