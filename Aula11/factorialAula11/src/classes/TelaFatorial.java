@@ -28,7 +28,7 @@ public class TelaFatorial extends javax.swing.JFrame {
     private void initComponents() {
 
         valFat = new javax.swing.JSpinner();
-        jButton1 = new javax.swing.JButton();
+        btnCalcular = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -40,7 +40,7 @@ public class TelaFatorial extends javax.swing.JFrame {
 
         valFat.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
 
-        jButton1.setText("Calcular");
+        btnCalcular.setText("Calcular");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("!");
@@ -83,7 +83,7 @@ public class TelaFatorial extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton1)
+                        .addComponent(btnCalcular)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 98, Short.MAX_VALUE)
                         .addComponent(jLabel2)))
                 .addContainerGap())
@@ -99,7 +99,7 @@ public class TelaFatorial extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(valFat, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1)
-                            .addComponent(jButton1)))
+                            .addComponent(btnCalcular)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jLabel2)))
@@ -150,7 +150,7 @@ public class TelaFatorial extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnCalcular;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
