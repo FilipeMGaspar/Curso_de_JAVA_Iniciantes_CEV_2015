@@ -135,12 +135,14 @@ public class TelaFatorial extends javax.swing.JFrame {
         String fatorial = num + "!";
         lblResultado.setText(fatorial);
         int conta = 0;
+        int fat = 1;
         String tst = ""; 
         while (conta<num){
             conta ++;
+            fat *= conta;
             tst += conta + " ";
         }
-        lblTeste.setText(tst);
+        lblTeste.setText(tst + " " + Integer.toString(fat) );
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
