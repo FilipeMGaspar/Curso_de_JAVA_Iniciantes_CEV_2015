@@ -38,7 +38,7 @@ public class TelaFatorial extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        valFat.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
+        valFat.setModel(new javax.swing.SpinnerNumberModel(0, 0, 13, 1));
 
         btnCalcular.setText("Calcular");
         btnCalcular.addActionListener(new java.awt.event.ActionListener() {
