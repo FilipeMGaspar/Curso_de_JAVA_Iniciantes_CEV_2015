@@ -34,7 +34,7 @@ public class TelaFatorial extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         lblResultado = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        lblResultFat = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,9 +63,9 @@ public class TelaFatorial extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel5.setText("=");
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 51, 153));
-        jLabel6.setText("0");
+        lblResultFat.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        lblResultFat.setForeground(new java.awt.Color(0, 51, 153));
+        lblResultFat.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -91,7 +91,7 @@ public class TelaFatorial extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblResultFat, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -114,7 +114,7 @@ public class TelaFatorial extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblResultado)
                     .addComponent(jLabel5)
-                    .addComponent(jLabel6))
+                    .addComponent(lblResultFat))
                 .addGap(48, 48, 48))
         );
 
@@ -128,12 +128,11 @@ public class TelaFatorial extends javax.swing.JFrame {
         lblResultado.setText(fatorial);
         int conta = 0;
         int fat = 1;
-        String tst = ""; 
         while (conta<num){
             conta ++;
             fat *= conta;
         }
-        
+        lblResultFat.setText();
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
@@ -177,7 +176,7 @@ public class TelaFatorial extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel lblResultFat;
     private javax.swing.JLabel lblResultado;
     private javax.swing.JSpinner valFat;
     // End of variables declaration//GEN-END:variables
