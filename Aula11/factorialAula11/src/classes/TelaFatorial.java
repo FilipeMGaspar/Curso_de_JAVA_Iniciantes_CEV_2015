@@ -134,7 +134,13 @@ public class TelaFatorial extends javax.swing.JFrame {
         int num = Integer.parseInt(valFat.getValue().toString());
         String fatorial = num + "!";
         lblResultado.setText(fatorial);
-        
+        int conta = 0;
+        String tst = ""; 
+        while (conta<num){
+            conta ++;
+            tst = conta + " ";
+        }
+        lblTeste.setText(fatorial);
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
