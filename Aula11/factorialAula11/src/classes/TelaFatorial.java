@@ -132,7 +132,7 @@ public class TelaFatorial extends javax.swing.JFrame {
             conta ++;
             fat *= conta;
         }
-        lblResultFat.setText();
+        lblResultFat.setText(Integer.toString(fat));
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
