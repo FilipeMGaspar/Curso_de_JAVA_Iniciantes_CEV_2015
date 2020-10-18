@@ -138,9 +138,9 @@ public class TelaFatorial extends javax.swing.JFrame {
         String tst = ""; 
         while (conta<num){
             conta ++;
-            tst = conta + " ";
+            tst += conta + " ";
         }
-        lblTeste.setText(fatorial);
+        lblTeste.setText(tst);
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
