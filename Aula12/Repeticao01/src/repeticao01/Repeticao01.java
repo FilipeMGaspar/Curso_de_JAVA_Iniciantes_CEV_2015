@@ -18,7 +18,7 @@ public class Repeticao01 {
         // TODO code application logic here
         int cc = 0;
         do{
-            System.out.println("Cabalhota!");
+            System.out.println("Cabalhota " + cc +"!");
             cc++;
         }while(cc < 4);
     }
