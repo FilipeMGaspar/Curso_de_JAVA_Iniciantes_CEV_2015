@@ -23,7 +23,7 @@ public class Numeros {
         Scanner teclado = new Scanner(System.in);
         do{
             
-        }while(resp.equals(resp));
+        }while(resp.equals("s"));
     }
     
 }
