@@ -5,6 +5,8 @@
  */
 package numeros;
 
+import java.util.Scanner;
+
 /**
  *
  * @author user
@@ -16,7 +18,8 @@ public class Numeros {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        int n, s=0;
+        Scanner teclado = new Scanner(System.in);
     }
     
 }
