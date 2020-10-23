@@ -28,6 +28,7 @@ public class Numeros {
             System.out.println("Deseja Continuar [s/n]");
             resp=teclado.next();
         }while(resp.equals("s"));
+        
     }
     
 }
