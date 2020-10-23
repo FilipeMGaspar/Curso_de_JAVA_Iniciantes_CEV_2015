@@ -22,7 +22,8 @@ public class Numeros {
         String resp;
         Scanner teclado = new Scanner(System.in);
         do{
-            
+            System.out.print("Digite um número: ");
+            teclado.nextInt();
         }while(resp.equals("s"));
     }
     
