@@ -19,7 +19,9 @@ public class Numeros {
     public static void main(String[] args) {
         // TODO code application logic here
         int n, s=0;
+        String resp;
         Scanner teclado = new Scanner(System.in);
+        
     }
     
 }
