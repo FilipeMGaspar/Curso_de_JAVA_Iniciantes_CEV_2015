@@ -25,6 +25,8 @@ public class Numeros {
             System.out.print("Digite um número: ");
             n = teclado.nextInt();
             s += n;
+            System.out.println("Deseja Continuar [s/n]");
+            resp=teclado.next();
         }while(resp.equals("s"));
     }
     
