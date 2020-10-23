@@ -21,7 +21,9 @@ public class Numeros {
         int n, s=0;
         String resp;
         Scanner teclado = new Scanner(System.in);
-        
+        do{
+            
+        }while(resp.equals(resp));
     }
     
 }
