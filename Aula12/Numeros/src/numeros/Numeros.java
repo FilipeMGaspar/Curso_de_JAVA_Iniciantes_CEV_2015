@@ -25,7 +25,7 @@ public class Numeros {
             System.out.print("Digite um número: ");
             n = teclado.nextInt();
             s += n;
-            System.out.println("Deseja Continuar? [s/n]: ");
+            System.out.print("Deseja Continuar? [s/n]: ");
             resp=teclado.next();
         }while(resp.equals("s"));
         System.out.println("A soma de todos os valores é: " + s);
