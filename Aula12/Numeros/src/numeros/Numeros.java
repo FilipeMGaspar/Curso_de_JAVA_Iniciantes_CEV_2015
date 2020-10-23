@@ -24,7 +24,7 @@ public class Numeros {
         do{
             System.out.print("Digite um número: ");
             n = teclado.nextInt();
-            
+            s += n;
         }while(resp.equals("s"));
     }
     
