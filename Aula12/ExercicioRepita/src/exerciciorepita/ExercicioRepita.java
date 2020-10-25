@@ -21,7 +21,7 @@ public class ExercicioRepita {
        //int n = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um número"));
        //JOptionPane.showMessageDialog(null,"Você digitou o valor "+ n);
        int n, s = 0, conta = 0;
-       int totPares = 0, totImpares = 0;
+       int totPares = 0, totImpares = 0, maiorQueCem = 0;
        double media;
        do{
             n = Integer.parseInt(JOptionPane.showInputDialog(null, "<html>Digite um número <br> número <strong>0</strong> <em>para parar!</em></html>"));
@@ -37,6 +37,9 @@ public class ExercicioRepita {
                totImpares++;
             }
             
+            if(n >= 100){
+                maiorQueCem++;
+            }
        }while(n != 0);
        media = s / conta;
        JOptionPane.showMessageDialog(null,"<html>Resultado Final"
@@ -44,6 +47,7 @@ public class ExercicioRepita {
                                     +"Número de entradas:  "+ conta
                                     +"<br>Total de números pares: "+totPares
                                     +"<br>Total de números impares: "+totImpares
+                                    +"<br>Valores acima de 100: "+maiorQueCem
                                     + "<br>Soma dos valores:  " +s 
                                     +"<br> Média dos valores: "+ media
                                     + "</html>");
