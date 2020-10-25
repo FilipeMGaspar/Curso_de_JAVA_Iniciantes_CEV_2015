@@ -25,7 +25,9 @@ public class ExercicioRepita {
             n = Integer.parseInt(JOptionPane.showInputDialog(null, "<html>Digite um número <br> número <strong>0</strong> <em>para parar!</em></html>"));
             s += n;
        }while(n != 0);
-       JOptionPane.showMessageDialog(null,"A soma de todos os valores é "+ s);
+       JOptionPane.showMessageDialog(null,"<html>Resultado Final"
+                                    + "<br> ----------------------<br>"
+                                    + "Somatório =  " +s +"</html>");
     }
     
 }
