@@ -25,7 +25,9 @@ public class ExercicioRepita {
        do{
             n = Integer.parseInt(JOptionPane.showInputDialog(null, "<html>Digite um número <br> número <strong>0</strong> <em>para parar!</em></html>"));
             s += n;
-            conta++;
+            if(n != 0){
+                conta++;
+            }
        }while(n != 0);
        media = s / conta;
        JOptionPane.showMessageDialog(null,"<html>Resultado Final"
