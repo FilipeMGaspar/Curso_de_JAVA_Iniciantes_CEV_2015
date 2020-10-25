@@ -33,6 +33,8 @@ public class ExercicioRepita {
             
             if((n%2 == 0) && (n != 0)){
                 totPares++;
+            }else if((n%2 !=0) && (n != 0)){
+               totImpares++;
             }
             
        }while(n != 0);
@@ -41,7 +43,7 @@ public class ExercicioRepita {
                                     + "<br> ---------------------------<br>"
                                     +"Número de entradas:  "+ conta
                                     +"<br>Total de números pares: "+totPares
-                                    +"<br>Total de números impares: "
+                                    +"<br>Total de números impares: "+totImpares
                                     + "<br>Soma dos valores:  " +s 
                                     +"<br> Média dos valores: "+ media
                                     + "</html>");
