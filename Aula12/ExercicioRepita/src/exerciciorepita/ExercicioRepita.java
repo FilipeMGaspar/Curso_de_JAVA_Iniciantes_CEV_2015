@@ -18,7 +18,7 @@ public class ExercicioRepita {
     public static void main(String[] args) {
         // TODO code application logic here
         //JOptionPane.showMessageDialog(null, "Olá Mundo!", "Boas Vindas", JOptionPane.ERROR_MESSAGE);
-        JOptionPane.showInputDialog(null, "Digite um número");
+       int n = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um número"));
     }
     
 }
