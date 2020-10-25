@@ -26,8 +26,13 @@ public class ExercicioRepita {
        do{
             n = Integer.parseInt(JOptionPane.showInputDialog(null, "<html>Digite um número <br> número <strong>0</strong> <em>para parar!</em></html>"));
             s += n;
+            
             if(n != 0){
                 conta++;
+            }
+            
+            if((n%2 == 0) && (n != 0)){
+                totPares++;
             }
             
        }while(n != 0);
@@ -35,7 +40,7 @@ public class ExercicioRepita {
        JOptionPane.showMessageDialog(null,"<html>Resultado Final"
                                     + "<br> ---------------------------<br>"
                                     +"Número de entradas:  "+ conta
-                                    +"<br>Total de números pares: "
+                                    +"<br>Total de números pares: "+totPares
                                     +"<br>Total de números impares: "
                                     + "<br>Soma dos valores:  " +s 
                                     +"<br> Média dos valores: "+ media
