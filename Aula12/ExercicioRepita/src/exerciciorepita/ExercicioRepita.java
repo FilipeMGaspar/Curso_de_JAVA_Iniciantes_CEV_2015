@@ -31,9 +31,11 @@ public class ExercicioRepita {
        }while(n != 0);
        media = s / conta;
        JOptionPane.showMessageDialog(null,"<html>Resultado Final"
-                                    + "<br> ----------------------<br>"
-                                    + "Somatório =  " +s 
-                                    +"<br> Média = "+ conta
+                                    + "<br> ---------------------------<br>"
+                                    +"Número de entradas:  "+ conta
+                                    +"<br>Total de números pares: "
+                                    + "<br>Soma dos valores:  " +s 
+                                    +"<br> Média dos valores: "+ media
                                     + "</html>");
     }
     
