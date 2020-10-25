@@ -34,6 +34,7 @@ public class ExercicioRepita {
                                     + "<br> ---------------------------<br>"
                                     +"Número de entradas:  "+ conta
                                     +"<br>Total de números pares: "
+                                    +"<br>Total de números impares: "
                                     + "<br>Soma dos valores:  " +s 
                                     +"<br> Média dos valores: "+ media
                                     + "</html>");
