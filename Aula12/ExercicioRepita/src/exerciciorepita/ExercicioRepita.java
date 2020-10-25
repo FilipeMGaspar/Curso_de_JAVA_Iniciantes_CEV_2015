@@ -20,10 +20,12 @@ public class ExercicioRepita {
         //JOptionPane.showMessageDialog(null, "Olá Mundo!", "Boas Vindas", JOptionPane.ERROR_MESSAGE);
        //int n = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite um número"));
        //JOptionPane.showMessageDialog(null,"Você digitou o valor "+ n);
-       int n;
+       int n, s=0;
        do{
-            n = Integer.parseInt(JOptionPane.showInputDialog(null, "<html>Digite um número <br> <strong>0</strong> <em>para parar!</em></html>"));
+            n = Integer.parseInt(JOptionPane.showInputDialog(null, "<html>Digite um número <br> número <strong>0</strong> <em>para parar!</em></html>"));
+            s += n;
        }while(n != 0);
+       JOptionPane.showMessageDialog(null,"A soma de todos os valores é "+ s);
     }
     
 }
