@@ -44,7 +44,7 @@ public class ExercicioRepita {
        media = s / conta;
        JOptionPane.showMessageDialog(null,"<html>Resultado Final"
                                     + "<br> ---------------------------<br>"
-                                    +"Número de entradas:  "+ conta
+                                    +"<br>Número de entradas:  "+ conta
                                     +"<br>Total de números pares: "+totPares
                                     +"<br>Total de números impares: "+totImpares
                                     +"<br>Valores acima de 100: "+maiorQueCem
