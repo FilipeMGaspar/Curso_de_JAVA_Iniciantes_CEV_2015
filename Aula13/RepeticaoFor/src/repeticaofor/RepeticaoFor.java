@@ -16,11 +16,11 @@ public class RepeticaoFor {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        for(int cc=1; cc<=4; cc++){
+        for(int cc=1; cc<=4; cc++){//contagem crescente
             System.out.println("Cambalhota "+cc+"!");
         }
         
-        for(int cc=15; cc>=5; cc-=2){
+        for(int cc=15; cc>=5; cc-=2){//contagem decrescente
             System.out.println(cc);
         }
     }
