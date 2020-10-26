@@ -17,7 +17,7 @@ public class RepeticaoForAninhada {
     public static void main(String[] args) {
         // TODO code application logic here
         for (int i=0; i<=3; i++){
-            for (){
+            for (int j=0; j<=3; j+=2){
                 
             }
         }
