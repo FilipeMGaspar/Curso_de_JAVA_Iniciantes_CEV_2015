@@ -38,6 +38,7 @@ public class telaContador extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 153));
         jLabel1.setText("Contador com inicio fim e passo");
 
+        inicio.setMajorTickSpacing(1);
         inicio.setMaximum(12);
         inicio.setValue(0);
         inicio.addChangeListener(new javax.swing.event.ChangeListener() {
