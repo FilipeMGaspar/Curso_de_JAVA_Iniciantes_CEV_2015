@@ -28,7 +28,8 @@ public class telaContador extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jSlider1 = new javax.swing.JSlider();
+        inicio = new javax.swing.JSlider();
+        lblInicio = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -37,20 +38,39 @@ public class telaContador extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 153));
         jLabel1.setText("Contador com inicio fim e passo");
 
-        jLabel2.setText("0");
+        inicio.setMajorTickSpacing(3);
+        inicio.setMaximum(20);
+        inicio.setMinimum(3);
+        inicio.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                inicioStateChanged(evt);
+            }
+        });
+
+        lblInicio.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblInicio.setForeground(new java.awt.Color(0, 51, 102));
+        lblInicio.setText("0");
+
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(51, 0, 102));
+        jLabel2.setText("Inico");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(37, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(37, Short.MAX_VALUE)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(inicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2))
-                    .addComponent(jLabel1))
+                        .addComponent(lblInicio)))
                 .addGap(24, 24, 24))
         );
         layout.setVerticalGroup(
@@ -58,15 +78,22 @@ public class telaContador extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(22, 22, 22)
                 .addComponent(jLabel1)
-                .addGap(32, 32, 32)
+                .addGap(33, 33, 33)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(inicio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblInicio)
                     .addComponent(jLabel2))
-                .addContainerGap(191, Short.MAX_VALUE))
+                .addContainerGap(190, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void inicioStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_inicioStateChanged
+        // TODO add your handling code here:
+        lblInicio.setText(Integer.toString(inicio.getValue()));
+        
+    }//GEN-LAST:event_inicioStateChanged
 
     /**
      * @param args the command line arguments
@@ -104,8 +131,9 @@ public class telaContador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JSlider inicio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JSlider jSlider1;
+    private javax.swing.JLabel lblInicio;
     // End of variables declaration//GEN-END:variables
 }
