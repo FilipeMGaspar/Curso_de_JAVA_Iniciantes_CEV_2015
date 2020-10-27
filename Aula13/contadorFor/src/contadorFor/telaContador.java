@@ -33,7 +33,7 @@ public class telaContador extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         fim = new javax.swing.JSlider();
-        lblInicio1 = new javax.swing.JLabel();
+        lblFim = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -64,9 +64,9 @@ public class telaContador extends javax.swing.JFrame {
 
         fim.setValue(0);
 
-        lblInicio1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        lblInicio1.setForeground(new java.awt.Color(0, 51, 102));
-        lblInicio1.setText("0");
+        lblFim.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblFim.setForeground(new java.awt.Color(0, 51, 102));
+        lblFim.setText("0");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -84,7 +84,7 @@ public class telaContador extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(lblInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(lblInicio1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(lblFim, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(43, 43, 43))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(37, Short.MAX_VALUE)
@@ -105,7 +105,7 @@ public class telaContador extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3)
                     .addComponent(fim, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblInicio1))
+                    .addComponent(lblFim))
                 .addContainerGap(146, Short.MAX_VALUE))
         );
 
@@ -159,7 +159,7 @@ public class telaContador extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel lblFim;
     private javax.swing.JLabel lblInicio;
-    private javax.swing.JLabel lblInicio1;
     // End of variables declaration//GEN-END:variables
 }
