@@ -63,6 +63,11 @@ public class telaContador extends javax.swing.JFrame {
         jLabel3.setText("Fim");
 
         fim.setValue(0);
+        fim.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                fimStateChanged(evt);
+            }
+        });
 
         lblFim.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblFim.setForeground(new java.awt.Color(0, 51, 102));
@@ -117,6 +122,11 @@ public class telaContador extends javax.swing.JFrame {
         lblInicio.setText(Integer.toString(inicio.getValue()));
         
     }//GEN-LAST:event_inicioStateChanged
+
+    private void fimStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_fimStateChanged
+        // TODO add your handling code here:
+        lblFim.setText(Integer.toString(fim.getValue()));
+    }//GEN-LAST:event_fimStateChanged
 
     /**
      * @param args the command line arguments
