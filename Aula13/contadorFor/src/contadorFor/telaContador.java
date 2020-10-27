@@ -62,6 +62,7 @@ public class telaContador extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(51, 0, 102));
         jLabel3.setText("Fim");
 
+        fim.setMaximum(24);
         fim.setValue(0);
         fim.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
