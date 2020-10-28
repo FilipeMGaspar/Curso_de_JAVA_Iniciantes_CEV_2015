@@ -84,6 +84,8 @@ public class telaContador extends javax.swing.JFrame {
 
         passo.setMaximum(5);
         passo.setMinimum(1);
+        passo.setMinorTickSpacing(1);
+        passo.setValue(0);
         passo.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 passoStateChanged(evt);
