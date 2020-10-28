@@ -81,6 +81,9 @@ public class telaContador extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(51, 0, 102));
         jLabel4.setText("Passo");
 
+        jSlider1.setMaximum(5);
+        jSlider1.setValue(0);
+
         lblPasso.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblPasso.setForeground(new java.awt.Color(0, 51, 102));
         lblPasso.setText("0");

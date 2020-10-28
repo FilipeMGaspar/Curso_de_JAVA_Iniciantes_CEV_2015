@@ -173,6 +173,10 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JSlider" name="jSlider1">
+      <Properties>
+        <Property name="maximum" type="int" value="5"/>
+        <Property name="value" type="int" value="0"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lblPasso">
       <Properties>
