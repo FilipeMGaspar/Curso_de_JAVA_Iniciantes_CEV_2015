@@ -17,6 +17,7 @@ public class telaContador extends javax.swing.JFrame {
     public telaContador() {
         initComponents();
         lblPasso.setText(Integer.toString(passo.getValue()));
+        lblFim.setText(Integer.toString(fim.getValue()));
     }
 
     /**
@@ -70,6 +71,9 @@ public class telaContador extends javax.swing.JFrame {
         jLabel3.setText("Fim");
 
         fim.setMaximum(24);
+        fim.setMinimum(6);
+        fim.setMinorTickSpacing(1);
+        fim.setToolTipText("");
         fim.setValue(0);
         fim.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
