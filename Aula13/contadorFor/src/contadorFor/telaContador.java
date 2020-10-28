@@ -208,6 +208,10 @@ public class telaContador extends javax.swing.JFrame {
         int valPasso = passo.getValue();
         
         DefaultListModel lista = new DefaultListModel();
+        
+        for (int c = valInicio; c <= valFinal; c += valPasso){
+            
+        }
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
