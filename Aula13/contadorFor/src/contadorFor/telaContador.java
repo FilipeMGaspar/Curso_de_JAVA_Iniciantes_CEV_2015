@@ -43,7 +43,7 @@ public class telaContador extends javax.swing.JFrame {
         lblPasso = new javax.swing.JLabel();
         btnCalcular = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        lstContagem = new javax.swing.JList<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -114,7 +114,7 @@ public class telaContador extends javax.swing.JFrame {
             }
         });
 
-        jScrollPane1.setViewportView(jList1);
+        jScrollPane1.setViewportView(lstContagem);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -212,7 +212,7 @@ public class telaContador extends javax.swing.JFrame {
         for (int c = valInicio; c <= valFinal; c += valPasso){
             lista.addElement(c);
         }
-        
+        lstContagem.setModel(lista);
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
@@ -258,11 +258,11 @@ public class telaContador extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JList<String> jList1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblFim;
     private javax.swing.JLabel lblInicio;
     private javax.swing.JLabel lblPasso;
+    private javax.swing.JList<String> lstContagem;
     private javax.swing.JSlider passo;
     // End of variables declaration//GEN-END:variables
 }
