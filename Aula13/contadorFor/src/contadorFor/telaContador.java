@@ -35,7 +35,7 @@ public class telaContador extends javax.swing.JFrame {
         fim = new javax.swing.JSlider();
         lblFim = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jSlider1 = new javax.swing.JSlider();
+        passo = new javax.swing.JSlider();
         lblPasso = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -81,8 +81,13 @@ public class telaContador extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(51, 0, 102));
         jLabel4.setText("Passo");
 
-        jSlider1.setMaximum(5);
-        jSlider1.setValue(0);
+        passo.setMaximum(5);
+        passo.setValue(0);
+        passo.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                passoStateChanged(evt);
+            }
+        });
 
         lblPasso.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblPasso.setForeground(new java.awt.Color(0, 51, 102));
@@ -113,7 +118,7 @@ public class telaContador extends javax.swing.JFrame {
                             .addComponent(lblInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblFim, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(passo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblPasso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -135,7 +140,7 @@ public class telaContador extends javax.swing.JFrame {
                     .addComponent(lblFim))
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(passo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel4)
                     .addComponent(lblPasso))
                 .addContainerGap(104, Short.MAX_VALUE))
@@ -154,6 +159,11 @@ public class telaContador extends javax.swing.JFrame {
         // TODO add your handling code here:
         lblFim.setText(Integer.toString(fim.getValue()));
     }//GEN-LAST:event_fimStateChanged
+
+    private void passoStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_passoStateChanged
+        // TODO add your handling code here:
+        lblPasso.setText(Integer.toString(passo.getValue()));
+    }//GEN-LAST:event_passoStateChanged
 
     /**
      * @param args the command line arguments
@@ -197,9 +207,9 @@ public class telaContador extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JSlider jSlider1;
     private javax.swing.JLabel lblFim;
     private javax.swing.JLabel lblInicio;
     private javax.swing.JLabel lblPasso;
+    private javax.swing.JSlider passo;
     // End of variables declaration//GEN-END:variables
 }
