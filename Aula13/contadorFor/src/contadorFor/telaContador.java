@@ -36,6 +36,7 @@ public class telaContador extends javax.swing.JFrame {
         lblFim = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jSlider1 = new javax.swing.JSlider();
+        lblPasso = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -80,6 +81,10 @@ public class telaContador extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(51, 0, 102));
         jLabel4.setText("Passo");
 
+        lblPasso.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblPasso.setForeground(new java.awt.Color(0, 51, 102));
+        lblPasso.setText("0");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -104,7 +109,10 @@ public class telaContador extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(lblInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(lblFim, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblPasso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -125,7 +133,8 @@ public class telaContador extends javax.swing.JFrame {
                 .addGap(16, 16, 16)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
+                    .addComponent(jLabel4)
+                    .addComponent(lblPasso))
                 .addContainerGap(104, Short.MAX_VALUE))
         );
 
@@ -188,5 +197,6 @@ public class telaContador extends javax.swing.JFrame {
     private javax.swing.JSlider jSlider1;
     private javax.swing.JLabel lblFim;
     private javax.swing.JLabel lblInicio;
+    private javax.swing.JLabel lblPasso;
     // End of variables declaration//GEN-END:variables
 }
