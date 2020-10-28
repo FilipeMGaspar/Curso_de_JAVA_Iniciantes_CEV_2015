@@ -5,6 +5,8 @@
  */
 package contadorFor;
 
+import javax.swing.DefaultListModel;
+
 /**
  *
  * @author user
@@ -42,7 +44,6 @@ public class telaContador extends javax.swing.JFrame {
         btnCalcular = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
-        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -115,8 +116,6 @@ public class telaContador extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(jList1);
 
-        jLabel5.setText("jLabel5");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -144,11 +143,7 @@ public class telaContador extends javax.swing.JFrame {
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(passo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jLabel5)
-                                                .addGap(0, 0, Short.MAX_VALUE))
-                                            .addComponent(lblPasso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                                        .addComponent(lblPasso, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(123, 123, 123)
                                 .addComponent(btnCalcular)))
@@ -184,8 +179,7 @@ public class telaContador extends javax.swing.JFrame {
                         .addGap(24, 24, 24)
                         .addComponent(btnCalcular))
                     .addComponent(jScrollPane1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addComponent(jLabel5))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         pack();
@@ -210,7 +204,10 @@ public class telaContador extends javax.swing.JFrame {
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         // TODO add your handling code here:
         int valInicio = inicio.getValue();
-        jLabel5.setText(Integer.toString(valInicio));
+        int valFinal = fim.getValue();
+        int valPasso = passo.getValue();
+        
+        DefaultListModel lista = new DefaultListModel();
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
@@ -256,7 +253,6 @@ public class telaContador extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JList<String> jList1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblFim;
