@@ -20,10 +20,10 @@ public class Vetor04 {
         // TODO code application logic here
         int vet[] = {3, 7, 1, 9, 4, 2};
         for(int valor: vet){
-            System.out.println(valor);
+            System.out.print(valor +" ");
         }
         System.out.println("");
-        int p = Arrays.binarySearch(vet, 1);// pesquisa no vetor "vet" pelo valor 1
+        int p = Arrays.binarySearch(vet, 8);// pesquisa no vetor "vet" pelo valor 1
         System.out.println("Encontrei o valor na posição: " + p);
     }
     
