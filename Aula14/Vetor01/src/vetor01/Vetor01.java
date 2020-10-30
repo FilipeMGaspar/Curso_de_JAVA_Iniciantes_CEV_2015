@@ -16,6 +16,7 @@ public class Vetor01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int n[] = new int[4];
     }
     
 }
