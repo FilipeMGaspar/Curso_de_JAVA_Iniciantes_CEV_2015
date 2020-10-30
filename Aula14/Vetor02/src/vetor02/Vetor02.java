@@ -18,7 +18,7 @@ public class Vetor02 {
         // TODO code application logic here
         String mes[] ={"Jan", "Fev", "Mar", "Abr", "Maio", "Jun", "Jul", "Ago"
         ,"Set", "Out", "Nov", "Dez"};
-        
+        int tot[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
     }
     
 }
