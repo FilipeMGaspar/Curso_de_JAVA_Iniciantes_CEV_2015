@@ -23,7 +23,7 @@ public class Vetor04 {
             System.out.print(valor +" ");
         }
         System.out.println("");
-        int p = Arrays.binarySearch(vet, 1);// pesquisa no vetor "vet" pelo valor 1
+        int p = Arrays.binarySearch(vet, 8);// pesquisa no vetor "vet" pelo valor 1
         System.out.println("Encontrei o valor na posição: " + p);
     }
     
