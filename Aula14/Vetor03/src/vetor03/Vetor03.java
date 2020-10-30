@@ -19,7 +19,7 @@ public class Vetor03 {
         double v[] = {3.5, 2.75, 9, -4.5};
         
         for(double valor: v){ //para cada elemento de v coloque dentro de valor
-            
+            System.out.println(valor);
         }
     }
     
