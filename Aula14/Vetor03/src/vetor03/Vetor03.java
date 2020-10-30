@@ -5,6 +5,8 @@
  */
 package vetor03;
 
+import java.util.Arrays;
+
 /**
  *
  * @author user
@@ -17,7 +19,7 @@ public class Vetor03 {
     public static void main(String[] args) {
         // TODO code application logic here
         double v[] = {3.5, 2.75, 9, -4.5};
-        
+        Arrays.sort(v);
         for(double valor: v){ //para cada elemento de v coloque dentro de valor
             System.out.println(valor);
         }
