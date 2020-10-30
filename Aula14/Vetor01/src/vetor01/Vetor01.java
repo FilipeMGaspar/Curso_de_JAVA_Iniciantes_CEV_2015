@@ -17,7 +17,7 @@ public class Vetor01 {
     public static void main(String[] args) {
         // TODO code application logic here
         int n[] = {3, 2, 8, 7, 5, 4};
-        
+         System.out.println("Número de indices (Registos): "+ n.length);
         for (int i=0; i<=5; i++){
             System.out.println("Na Posição "+ i +" Temos o valor: "+n[i]+ " ");
         }
