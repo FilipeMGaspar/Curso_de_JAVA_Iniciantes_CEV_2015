@@ -16,6 +16,8 @@ public class Vetor04 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int vet[] = {3, 7, 1, 9, 4, 2};
+        
     }
     
 }
