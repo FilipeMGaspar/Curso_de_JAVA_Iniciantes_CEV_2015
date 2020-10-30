@@ -19,7 +19,7 @@ public class Vetor03 {
     public static void main(String[] args) {
         // TODO code application logic here
         double v[] = {3.5, 2.75, 9, -4.5};
-        Arrays.sort(v);
+        Arrays.sort(v);//Ordena o vetor por ordem crescente
         for(double valor: v){ //para cada elemento de v coloque dentro de valor
             System.out.println(valor);
         }
