@@ -16,10 +16,10 @@ public class Vetor01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int n[] = {3, 2, 8, 7, 7, 5, 4};
+        int n[] = {3, 2, 8, 7, 5, 4};
         
         for (int i=0; i<=5; i++){
-            System.out.print(i);
+            System.out.println("Na Posição "+ i +" Temos o valor: "+n[i]+ " ");
         }
     }
     
