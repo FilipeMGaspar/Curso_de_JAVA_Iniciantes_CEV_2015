@@ -5,6 +5,8 @@
  */
 package vetor04;
 
+import java.util.Arrays;
+
 /**
  *
  * @author user
@@ -17,7 +19,8 @@ public class Vetor04 {
     public static void main(String[] args) {
         // TODO code application logic here
         int vet[] = {3, 7, 1, 9, 4, 2};
-        
+        int p = Arrays.binarySearch(vet, 1);// pesquisa no vetor "vet" pelo valor 1
+        System.out.println("Encontrei o valor na posição: " + p);
     }
     
 }
