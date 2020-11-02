@@ -213,6 +213,8 @@ public class telaContador extends javax.swing.JFrame {
             for (int c = valInicio; c <= valFinal; c += valPasso){
                 lista.addElement(c);
             }
+        }else{
+            
         }
         lstContagem.setModel(lista);
     }//GEN-LAST:event_btnCalcularActionPerformed
