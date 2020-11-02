@@ -220,10 +220,8 @@ public class telaContador extends javax.swing.JFrame {
                 lista.addElement(c);
             }
         }else{
-            tst.setText(Integer.toString(valFinal));
             for(int c = valInicio; c >= valFinal; c -= valPasso){
                 lista.addElement(c);
-                tst.setText(Integer.toString(valFinal));
             }
         }
         lstContagem.setModel(lista);
