@@ -40,7 +40,7 @@ public class TelaVetor extends javax.swing.JFrame {
 
         jButton1.setText("Adicionar");
 
-        jButton2.setText("jButton2");
+        jButton2.setText("Remover");
 
         jButton3.setText("jButton3");
 
