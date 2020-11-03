@@ -42,7 +42,7 @@ public class TelaVetor extends javax.swing.JFrame {
 
         jButton2.setText("Remover");
 
-        jButton3.setText("jButton3");
+        jButton3.setText("Ordenar");
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel1.setText("Vetor");
