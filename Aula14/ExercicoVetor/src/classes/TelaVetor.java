@@ -127,7 +127,7 @@ public class TelaVetor extends javax.swing.JFrame {
 
     private void btnAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarActionPerformed
         // TODO add your handling code here:
-        vetor
+        vetor[selecionado] =Integer.parseInt(valAdd.getValue().toString());
         tst.setText(valAdd.getValue().toString());
     }//GEN-LAST:event_btnAdicionarActionPerformed
 
