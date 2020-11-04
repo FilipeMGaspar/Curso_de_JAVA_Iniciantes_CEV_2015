@@ -5,6 +5,8 @@
  */
 package classes;
 
+import javax.swing.DefaultListModel;
+
 /**
  *
  * @author user
@@ -16,6 +18,11 @@ public class TelaVetor extends javax.swing.JFrame {
      */
     public TelaVetor() {
         initComponents();
+        DefaultListModel lista = new DefaultListModel();
+         for (int c = 0; c <= 5; c++){
+                lista.addElement(0);
+            }
+          lstVetor.setModel(lista);
     }
 
     /**
