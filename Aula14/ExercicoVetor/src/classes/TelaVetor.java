@@ -129,6 +129,7 @@ public class TelaVetor extends javax.swing.JFrame {
         // TODO add your handling code here:
         vetor[selecionado] =Integer.parseInt(valAdd.getValue().toString());
         tst.setText(valAdd.getValue().toString());
+        lista.removeAllElements();
         for(int c = 1; c < vetor.length; c++){
             lista.addElement(vetor[c]);
         }
