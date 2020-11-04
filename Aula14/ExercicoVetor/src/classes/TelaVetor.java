@@ -16,9 +16,12 @@ public class TelaVetor extends javax.swing.JFrame {
     /**
      * Creates new form TelaVetor
      */
+     int vetor[] = new int [5];
+     DefaultListModel lista = new DefaultListModel();
+     
     public TelaVetor() {
         initComponents();
-        DefaultListModel lista = new DefaultListModel();//
+       
          for (int c = 0; c <= 5; c++){//
                 lista.addElement(0);//
             }
