@@ -22,6 +22,9 @@ public class TelaVetor extends javax.swing.JFrame {
      
     public TelaVetor() {
         initComponents();
+          for(int c = 0; c < vetor.length; c++){
+            lista.addElement(vetor[c]);
+          }
     }
 
     /**
@@ -136,7 +139,7 @@ public class TelaVetor extends javax.swing.JFrame {
     private void lstVetorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lstVetorMouseClicked
         // TODO add your handling code here:
         selecionado = lstVetor.getAnchorSelectionIndex();
-        lblSelecionado.setText(Integer.toString(selecionado));
+        lblSelecionado.setText("[ "+Integer.toString(selecionado)+" ]");
     }//GEN-LAST:event_lstVetorMouseClicked
 
     /**
