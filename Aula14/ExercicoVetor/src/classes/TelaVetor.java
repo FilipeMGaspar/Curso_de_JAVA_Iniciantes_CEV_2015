@@ -59,6 +59,11 @@ public class TelaVetor extends javax.swing.JFrame {
         btnRemover.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnRemover.setForeground(new java.awt.Color(153, 0, 51));
         btnRemover.setText("Remover");
+        btnRemover.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRemoverActionPerformed(evt);
+            }
+        });
 
         btnOrdenar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnOrdenar.setForeground(new java.awt.Color(0, 0, 153));
@@ -141,6 +146,14 @@ public class TelaVetor extends javax.swing.JFrame {
         selecionado = lstVetor.getAnchorSelectionIndex();
         lblSelecionado.setText("[ "+Integer.toString(selecionado)+" ]");
     }//GEN-LAST:event_lstVetorMouseClicked
+
+    private void btnRemoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverActionPerformed
+        // TODO add your handling code here:
+        vetor[selecionado] = 0;
+        for(int c = 0; c < vetor.length; c++){
+          lista.addElement(vetor[c]);
+        }
+    }//GEN-LAST:event_btnRemoverActionPerformed
 
     /**
      * @param args the command line arguments
