@@ -18,6 +18,7 @@ public class TelaVetor extends javax.swing.JFrame {
      */
      int vetor[] = new int [5];
      DefaultListModel lista = new DefaultListModel();
+     int selecionado  = 0;
      
     public TelaVetor() {
         initComponents();
