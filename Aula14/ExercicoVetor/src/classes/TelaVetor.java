@@ -5,6 +5,7 @@
  */
 package classes;
 
+import java.util.Arrays;
 import javax.swing.DefaultListModel;
 
 /**
@@ -68,6 +69,11 @@ public class TelaVetor extends javax.swing.JFrame {
         btnOrdenar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnOrdenar.setForeground(new java.awt.Color(0, 0, 153));
         btnOrdenar.setText("Ordenar");
+        btnOrdenar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOrdenarActionPerformed(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel1.setText("Vetor");
@@ -150,10 +156,17 @@ public class TelaVetor extends javax.swing.JFrame {
     private void btnRemoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRemoverActionPerformed
         // TODO add your handling code here:
         vetor[selecionado] = 0;
+        lista.removeAllElements();
         for(int c = 0; c < vetor.length; c++){
           lista.addElement(vetor[c]);
         }
     }//GEN-LAST:event_btnRemoverActionPerformed
+
+    private void btnOrdenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrdenarActionPerformed
+        // TODO add your handling code here:
+       Arrays.sort(vetor);
+       
+    }//GEN-LAST:event_btnOrdenarActionPerformed
 
     /**
      * @param args the command line arguments
