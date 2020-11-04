@@ -165,7 +165,10 @@ public class TelaVetor extends javax.swing.JFrame {
     private void btnOrdenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrdenarActionPerformed
         // TODO add your handling code here:
        Arrays.sort(vetor);
-       
+       lista.removeAllElements();
+       for(int c = 0; c < vetor.length; c++){
+         lista.addElement(vetor[c]);
+       }
     }//GEN-LAST:event_btnOrdenarActionPerformed
 
     /**
