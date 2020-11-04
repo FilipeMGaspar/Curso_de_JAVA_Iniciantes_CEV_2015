@@ -34,7 +34,7 @@ public class TelaVetor extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
+        lstVetor = new javax.swing.JList<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,7 +55,7 @@ public class TelaVetor extends javax.swing.JFrame {
 
         jLabel2.setText("[0]");
 
-        jScrollPane1.setViewportView(jList1);
+        jScrollPane1.setViewportView(lstVetor);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -145,8 +145,8 @@ public class TelaVetor extends javax.swing.JFrame {
     private javax.swing.JButton btnRemover;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JList<String> jList1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JList<String> lstVetor;
     private javax.swing.JSpinner valAdd;
     // End of variables declaration//GEN-END:variables
 }
