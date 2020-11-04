@@ -27,7 +27,7 @@ public class TelaVetor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jSpinner1 = new javax.swing.JSpinner();
+        valAdd = new javax.swing.JSpinner();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -63,7 +63,7 @@ public class TelaVetor extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(valAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1)
@@ -84,7 +84,7 @@ public class TelaVetor extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(valAdd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1))
                 .addGap(18, 18, 18)
                 .addComponent(jButton2)
@@ -147,6 +147,6 @@ public class TelaVetor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JList<String> jList1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner valAdd;
     // End of variables declaration//GEN-END:variables
 }
