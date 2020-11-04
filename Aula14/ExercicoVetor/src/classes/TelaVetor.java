@@ -22,9 +22,6 @@ public class TelaVetor extends javax.swing.JFrame {
      
     public TelaVetor() {
         initComponents();
-       
-        
-          //lstVetor.setModel(lista);//
     }
 
     /**
@@ -130,7 +127,7 @@ public class TelaVetor extends javax.swing.JFrame {
 
     private void btnAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarActionPerformed
         // TODO add your handling code here:
-        
+        vetor
         tst.setText(valAdd.getValue().toString());
     }//GEN-LAST:event_btnAdicionarActionPerformed
 
