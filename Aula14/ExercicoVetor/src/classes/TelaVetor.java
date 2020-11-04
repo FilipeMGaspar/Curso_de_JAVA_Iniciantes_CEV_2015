@@ -23,10 +23,8 @@ public class TelaVetor extends javax.swing.JFrame {
     public TelaVetor() {
         initComponents();
        
-         for (int c = 0; c <= 5; c++){//
-                lista.addElement(0);//
-            }
-          lstVetor.setModel(lista);//
+        
+          //lstVetor.setModel(lista);//
     }
 
     /**
@@ -72,6 +70,7 @@ public class TelaVetor extends javax.swing.JFrame {
 
         lblSelecionado.setText("[0]");
 
+        lstVetor.setModel(lista);
         jScrollPane1.setViewportView(lstVetor);
 
         tst.setText("jLabel3");
