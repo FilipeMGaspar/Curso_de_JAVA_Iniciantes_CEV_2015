@@ -39,7 +39,7 @@ public class TelaVetor extends javax.swing.JFrame {
         btnRemover = new javax.swing.JButton();
         btnOrdenar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        lblSelecionado = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         lstVetor = new javax.swing.JList<>();
         tst = new javax.swing.JLabel();
@@ -66,7 +66,7 @@ public class TelaVetor extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel1.setText("Vetor");
 
-        jLabel2.setText("[0]");
+        lblSelecionado.setText("[0]");
 
         jScrollPane1.setViewportView(lstVetor);
 
@@ -90,7 +90,7 @@ public class TelaVetor extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                         .addComponent(jLabel1)
                         .addGap(31, 31, 31)
-                        .addComponent(jLabel2))
+                        .addComponent(lblSelecionado))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(56, 56, 56)
                         .addComponent(tst)
@@ -116,7 +116,7 @@ public class TelaVetor extends javax.swing.JFrame {
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
-                    .addComponent(jLabel2))
+                    .addComponent(lblSelecionado))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 229, Short.MAX_VALUE)
                 .addGap(21, 21, 21))
@@ -171,8 +171,8 @@ public class TelaVetor extends javax.swing.JFrame {
     private javax.swing.JButton btnOrdenar;
     private javax.swing.JButton btnRemover;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblSelecionado;
     private javax.swing.JList<String> lstVetor;
     private javax.swing.JLabel tst;
     private javax.swing.JSpinner valAdd;
