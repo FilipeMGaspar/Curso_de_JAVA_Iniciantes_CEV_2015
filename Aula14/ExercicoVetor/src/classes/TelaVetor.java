@@ -41,7 +41,6 @@ public class TelaVetor extends javax.swing.JFrame {
         lblSelecionado = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         lstVetor = new javax.swing.JList<>();
-        tst = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,8 +69,6 @@ public class TelaVetor extends javax.swing.JFrame {
         lstVetor.setModel(lista);
         jScrollPane1.setViewportView(lstVetor);
 
-        tst.setText("jLabel3");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -92,9 +89,7 @@ public class TelaVetor extends javax.swing.JFrame {
                         .addGap(31, 31, 31)
                         .addComponent(lblSelecionado))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(56, 56, 56)
-                        .addComponent(tst)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(56, 261, Short.MAX_VALUE)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(28, 28, 28))
         );
@@ -109,9 +104,7 @@ public class TelaVetor extends javax.swing.JFrame {
                 .addComponent(btnRemover)
                 .addGap(18, 18, 18)
                 .addComponent(btnOrdenar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(tst)
-                .addGap(33, 33, 33))
+                .addGap(33, 139, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -128,9 +121,8 @@ public class TelaVetor extends javax.swing.JFrame {
     private void btnAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarActionPerformed
         // TODO add your handling code here:
         vetor[selecionado] =Integer.parseInt(valAdd.getValue().toString());
-        tst.setText(valAdd.getValue().toString());
         lista.removeAllElements();
-        for(int c = 1; c < vetor.length; c++){
+        for(int c = 0; c < vetor.length; c++){
             lista.addElement(vetor[c]);
         }
     }//GEN-LAST:event_btnAdicionarActionPerformed
@@ -178,7 +170,6 @@ public class TelaVetor extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblSelecionado;
     private javax.swing.JList<String> lstVetor;
-    private javax.swing.JLabel tst;
     private javax.swing.JSpinner valAdd;
     // End of variables declaration//GEN-END:variables
 }
