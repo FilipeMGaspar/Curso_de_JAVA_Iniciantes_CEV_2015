@@ -42,6 +42,11 @@ public class TelaVetor extends javax.swing.JFrame {
         btnAdicionar.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnAdicionar.setForeground(new java.awt.Color(0, 102, 51));
         btnAdicionar.setText("Adicionar");
+        btnAdicionar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAdicionarActionPerformed(evt);
+            }
+        });
 
         btnRemover.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btnRemover.setForeground(new java.awt.Color(153, 0, 51));
@@ -112,6 +117,12 @@ public class TelaVetor extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarActionPerformed
+        // TODO add your handling code here:
+        
+        tst.setText(valAdd.getValue().toString());
+    }//GEN-LAST:event_btnAdicionarActionPerformed
 
     /**
      * @param args the command line arguments
