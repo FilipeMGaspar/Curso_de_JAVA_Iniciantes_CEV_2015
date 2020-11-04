@@ -29,7 +29,7 @@ public class TelaVetor extends javax.swing.JFrame {
 
         valAdd = new javax.swing.JSpinner();
         btnAdicionar = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnRemover = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -42,9 +42,9 @@ public class TelaVetor extends javax.swing.JFrame {
         btnAdicionar.setForeground(new java.awt.Color(0, 102, 51));
         btnAdicionar.setText("Adicionar");
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(153, 0, 51));
-        jButton2.setText("Remover");
+        btnRemover.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        btnRemover.setForeground(new java.awt.Color(153, 0, 51));
+        btnRemover.setText("Remover");
 
         jButton3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton3.setForeground(new java.awt.Color(0, 0, 153));
@@ -69,7 +69,7 @@ public class TelaVetor extends javax.swing.JFrame {
                     .addComponent(btnAdicionar)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jButton3)
-                        .addComponent(jButton2)))
+                        .addComponent(btnRemover)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -87,7 +87,7 @@ public class TelaVetor extends javax.swing.JFrame {
                     .addComponent(valAdd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnAdicionar))
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(btnRemover)
                 .addGap(18, 18, 18)
                 .addComponent(jButton3)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -141,7 +141,7 @@ public class TelaVetor extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAdicionar;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnRemover;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
