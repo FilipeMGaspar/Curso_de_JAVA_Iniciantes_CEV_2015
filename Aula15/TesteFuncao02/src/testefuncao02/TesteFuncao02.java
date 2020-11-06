@@ -21,8 +21,9 @@ public class TesteFuncao02 {
     
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("Começou o programa!");
         int s = soma(7, 5);
-        
+        System.out.println("O valor da soma é "+ s);
     }
     
 }
