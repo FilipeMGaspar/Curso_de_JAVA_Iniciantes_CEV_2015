@@ -11,7 +11,7 @@ package testefuncao03;
  */
 public class Operacoes {
     
-    String contador (int i, int f) {
+    public static String contador (int i, int f) {
         String s = "";
         for (int c = i; c<=f; c++){
             s += c + " ";
