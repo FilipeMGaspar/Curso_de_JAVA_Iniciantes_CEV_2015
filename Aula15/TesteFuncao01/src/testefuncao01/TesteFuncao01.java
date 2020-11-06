@@ -16,7 +16,8 @@ public class TesteFuncao01 {
      */
     
     void soma(int a, int b){
-        
+        int soma = a+ b;
+        System.out.println("A soma de "+ a +" com "+ b + "Tem o valor de "+soma);
     }
     
     public static void main(String[] args) {
