@@ -14,8 +14,14 @@ public class TesteFuncao01 {
     /**
      * @param args the command line arguments
      */
+    
+    void soma(int a, int b){
+        
+    }
+    
     public static void main(String[] args) {
         // TODO code application logic here
+        
     }
     
 }
