@@ -11,4 +11,8 @@ package testefuncao03;
  */
 public class Operacoes {
     
+    String contador (int i, int f) {
+        String s = "";
+        
+    }
 }
