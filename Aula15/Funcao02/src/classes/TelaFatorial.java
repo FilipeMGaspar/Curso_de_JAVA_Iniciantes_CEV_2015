@@ -106,7 +106,8 @@ public class TelaFatorial extends javax.swing.JFrame {
         int n = Integer.parseInt(txtNum.getValue().toString());
         Fatorial f = new Fatorial();
         f.SetValor(n);
-        lblFormula
+        lblFormula.setText(f.getFormula());
+        
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
