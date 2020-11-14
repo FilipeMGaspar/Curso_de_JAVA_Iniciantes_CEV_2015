@@ -18,8 +18,13 @@ public class Fatorial {
     public void SetValor(int n){
         num = n;
         int f = 1;
+        String s = "";
+        
         for (int c = n; c>1; c--){
             f *= c;
+            s += c +" x ";
         }
+        fat = f;
+        formula = s;
     } 
 }
