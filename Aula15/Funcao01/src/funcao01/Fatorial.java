@@ -32,5 +32,7 @@ public class Fatorial {
         return fat;
     }
     
-    
+    public String getFormula(){
+        return formula;
+    }
 }
