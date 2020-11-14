@@ -24,6 +24,7 @@ public class Fatorial {
             f *= c;
             s += c +" x ";
         }
+        s += "1 =";
         fat = f;
         formula = s;
     } 
