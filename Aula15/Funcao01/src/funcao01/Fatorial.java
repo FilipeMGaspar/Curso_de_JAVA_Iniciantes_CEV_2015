@@ -27,4 +27,10 @@ public class Fatorial {
         fat = f;
         formula = s;
     } 
+    
+    public int getFatorial(){
+        return fat;
+    }
+    
+    
 }
