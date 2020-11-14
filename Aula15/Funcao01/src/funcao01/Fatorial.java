@@ -17,6 +17,9 @@ public class Fatorial {
     
     public void SetValor(int n){
         num = n;
-        
+        int f = 1;
+        for (int c = n; c>1; c--){
+            f *= c;
+        }
     } 
 }
