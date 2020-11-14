@@ -18,6 +18,7 @@ public class Funcao01 {
         // TODO code application logic here
         Fatorial f = new Fatorial();
         f.SetValor(5);
+        System.out.println(f.getFatorial());
     }
     
 }
