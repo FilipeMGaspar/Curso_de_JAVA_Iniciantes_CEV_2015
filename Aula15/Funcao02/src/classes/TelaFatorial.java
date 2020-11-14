@@ -28,7 +28,7 @@ public class TelaFatorial extends javax.swing.JFrame {
     private void initComponents() {
 
         lblResultado = new javax.swing.JLabel();
-        txtnum = new javax.swing.JSpinner();
+        txtNum = new javax.swing.JSpinner();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         btnCalcular = new javax.swing.JButton();
@@ -73,7 +73,7 @@ public class TelaFatorial extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtnum, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtNum, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -87,7 +87,7 @@ public class TelaFatorial extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtnum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCalcular)
                     .addComponent(jLabel3)
                     .addComponent(jLabel1))
@@ -103,6 +103,7 @@ public class TelaFatorial extends javax.swing.JFrame {
 
     private void btnCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCalcularActionPerformed
         // TODO add your handling code here:
+        int n = Integer.parseInt(txtNum.getValue().toString());
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     /**
@@ -147,6 +148,6 @@ public class TelaFatorial extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel lblFormula;
     private javax.swing.JLabel lblResultado;
-    private javax.swing.JSpinner txtnum;
+    private javax.swing.JSpinner txtNum;
     // End of variables declaration//GEN-END:variables
 }
